@@ -97,9 +97,9 @@ main{padding-block:28px 96px}
 .ph-files{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:12px;line-height:1.3;font-variant-numeric:tabular-nums}
 .ph-files li{display:flex;gap:6px;overflow-wrap:anywhere}
 .ph-files li::before{content:"";flex:none;width:9px;height:11px;margin-top:1px;border:1px solid currentColor;opacity:.55}
-.sticker{position:absolute;left:10px;top:10px;z-index:2;padding:4px 7px;background:var(--bg);color:var(--ink);font:500 11px/1.2 var(--font);letter-spacing:.02em;text-transform:uppercase}
-.sticker.bad{color:var(--signal)}
-.star{position:absolute;right:8px;top:8px;z-index:3;display:grid;place-items:center;width:34px;height:34px;border:0;background:var(--bg);color:var(--ink);cursor:pointer;opacity:0;transition:opacity .15s}
+.sticker{position:absolute;left:10px;top:10px;z-index:2;padding:3px 7px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:500 11px/1.2 var(--font);letter-spacing:.02em;text-transform:uppercase}
+.sticker.bad{color:var(--signal);border-color:var(--signal)}
+.star{position:absolute;right:8px;top:8px;z-index:3;display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);cursor:pointer;opacity:0;transition:opacity .15s}
 .item:hover .star,.star:focus-visible,.star[aria-pressed="true"]{opacity:1}
 @media (hover:none){.star{opacity:1}}
 .star svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6}
