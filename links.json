@@ -522,6 +522,39 @@
    "img": "img/049.webp"
   },
   {
+   "n": "CASCA Archive",
+   "u": "https://casca-archive.org",
+   "d": "Архив графдизайна и визуальной культуры северо-востока Бразилии с 1950-х: кордель, гравюры, плакаты, обложки книг и пластинок, упаковка",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "img": "img/casca.webp",
+   "added": "2026-10-26"
+  },
+  {
+   "n": "Grafis Nusantara",
+   "u": "https://grafisnusantara.com/#archive",
+   "d": "Индонезийский архив наклеек и этикеток: 300+ стикеров и почти 200 этикеток еды, текстиля, сигарет и чая",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "img": "img/grafis-nusantara.webp",
+   "added": "2026-10-26"
+  },
+  {
+   "n": "East Asian Graphics Archive",
+   "u": "https://eastasiangraphicsarchive.com",
+   "d": "Плакаты, упаковка и айдентика Китая, Японии, Кореи, Таиланда и Вьетнама с фильтром по языку. По его мотивам сделана эта памятка",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "img": "img/eaga.webp",
+   "added": "2026-10-26"
+  },
+  {
    "n": "The Public Domain Review",
    "u": "https://publicdomainreview.org/collections/",
    "d": "Забытые изображения с историями. Каждую неделю новое",
