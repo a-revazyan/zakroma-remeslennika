@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Памятка канала «дизайн ремесленник»: полезные сайты, архивы, нейросети, библиотеки и файлы для дизайнера в одном месте.">
+<meta property="og:title" content="Закрома ремесленника">
+<meta property="og:description" content="Полезные сайты, архивы, нейросети и файлы для дизайнера из канала «дизайн ремесленник».">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Закрома ремесленника</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: архивная сетка по мотивам East Asian Graphics Archive — тёплый белый лист, портретные превью 4:5, подпись из трёх строк, квадратные фильтры, один шрифт Inter */
+:root{
+  --bg:#FFFEFC; --ink:#111111; --meta:#666666; --line:#CCCCCC; --hair:#E7E5E0; --soft:#F3F2EE;
+  --signal:#C8341F;
+  --font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121211; --ink:#EDEDEA; --meta:#9B9B96; --line:#3B3B39; --hair:#2A2A28; --soft:#1C1C1B;
+    --signal:#FF7A66; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121211; --ink:#EDEDEA; --meta:#9B9B96; --line:#3B3B39; --hair:#2A2A28; --soft:#1C1C1B;
+  --signal:#FF7A66; color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.2 var(--font);-webkit-font-smoothing:antialiased;font-feature-settings:"cv11","ss01"}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+p{margin:0}
+
+.wrap{max-width:1440px;margin-inline:auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+@media (min-width:760px){.wrap{padding-left:max(40px, env(safe-area-inset-left, 0px));padding-right:max(40px, env(safe-area-inset-right, 0px))}}
+
+/* ---------- шапка ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:24px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{flex:none;width:30px;height:34px;color:var(--ink)}
+.logo-word{font:600 15px/1.02 var(--font);letter-spacing:.01em;text-transform:uppercase}
+.menu-btn{border:0;background:none;padding:6px 0;font:400 22px/1 var(--font);cursor:pointer;letter-spacing:-.01em}
+
+/* ---------- вступление и фильтры ---------- */
+.intro{display:grid;gap:22px;padding-block:clamp(36px,7vw,88px) 0}
+.lede{max-width:34ch;font:400 clamp(22px,2.6vw,32px)/1.2 var(--font);letter-spacing:-.015em;text-wrap:balance}
+.lede span{color:var(--meta)}
+.stats{font-size:14px;color:var(--meta);font-variant-numeric:tabular-nums}
+
+.controls{display:grid;gap:14px;padding-block:44px 8px}
+.row{display:flex;align-items:center;gap:10px 12px;min-width:0}
+.label{flex:none;font:500 16px var(--font)}
+.filters{display:flex;gap:8px;min-width:0;overflow-x:auto;scrollbar-width:none;padding-block:2px}
+.filters::-webkit-scrollbar{display:none}
+@media (min-width:760px){.filters{flex-wrap:wrap;overflow:visible}}
+.fbtn{flex:none;display:inline-flex;align-items:baseline;gap:6px;padding:6px 14px;border:1px solid var(--line);border-radius:0;background:transparent;font:400 14px/1.3 var(--font);cursor:pointer;white-space:nowrap}
+.fbtn:hover{border-color:var(--ink)}
+.fbtn .n{font-size:11px;color:var(--meta);font-variant-numeric:tabular-nums}
+.fbtn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.fbtn[aria-pressed="true"] .n{color:var(--bg);opacity:.65}
+.fbtn.zero{color:var(--meta)}
+.search{flex:1 1 280px;min-width:0;max-width:520px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--ink);padding:4px 0}
+.search input{flex:1;min-width:0;border:0;background:transparent;outline:none;font:400 16px/1.4 var(--font);padding:4px 0}
+.search input::placeholder{color:var(--meta)}
+.search svg{flex:none;color:var(--meta)}
+.row.wrapme{flex-wrap:wrap}
+.add-btn{border:1px solid var(--ink);background:var(--ink);color:var(--bg);padding:6px 14px;font:500 14px/1.3 var(--font);cursor:pointer;border-radius:0}
+
+/* ---------- архив ---------- */
+main{padding-block:28px 96px}
+.result{font-size:14px;color:var(--meta);margin-bottom:-12px;padding-top:24px}
+.sec{padding-top:72px;scroll-margin-top:24px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:32px}
+.sec-head h2{margin:0;font:500 clamp(24px,2.6vw,34px)/1.1 var(--font);letter-spacing:-.02em;text-wrap:balance}
+.sec-head .count{font-size:14px;color:var(--meta);font-variant-numeric:tabular-nums}
+.sec-head p{flex-basis:100%;max-width:60ch;color:var(--meta);font-size:15px;line-height:1.4}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 16px}
+@media (min-width:640px){.grid{gap:48px 28px}}
+@media (min-width:860px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 40px}}
+@media (min-width:1160px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:64px 48px}}
+
+.item{position:relative;display:flex;flex-direction:column;min-width:0}
+.thumb{position:relative;aspect-ratio:4/5;max-width:100%;background:var(--soft);outline:1px solid var(--hair);outline-offset:-1px;overflow:hidden}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.item:hover .thumb img{transform:scale(1.025)}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:14px}
+.ph-word{font:600 clamp(18px,2vw,26px)/1.05 var(--font);letter-spacing:-.02em;overflow-wrap:anywhere}
+.ph-meta{font-size:12px;color:var(--meta)}
+.ph-files{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:12px;line-height:1.3;font-variant-numeric:tabular-nums}
+.ph-files li{display:flex;gap:6px;overflow-wrap:anywhere}
+.ph-files li::before{content:"";flex:none;width:9px;height:11px;margin-top:1px;border:1px solid currentColor;opacity:.55}
+.sticker{position:absolute;left:10px;top:10px;z-index:2;padding:4px 7px;background:var(--bg);color:var(--ink);font:500 11px/1.2 var(--font);letter-spacing:.02em;text-transform:uppercase}
+.sticker.bad{color:var(--signal)}
+.star{position:absolute;right:8px;top:8px;z-index:3;display:grid;place-items:center;width:34px;height:34px;border:0;background:var(--bg);color:var(--ink);cursor:pointer;opacity:0;transition:opacity .15s}
+.item:hover .star,.star:focus-visible,.star[aria-pressed="true"]{opacity:1}
+@media (hover:none){.star{opacity:1}}
+.star svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6}
+.star[aria-pressed="true"] svg{fill:currentColor}
+
+.cap{display:grid;gap:2px;padding-top:12px}
+.cap-title{margin:0;font:600 16px/1.2 var(--font);overflow-wrap:anywhere}
+.cap-title a{text-decoration:none}
+.cap-title a::after{content:"";position:absolute;inset:0;z-index:1}
+.cap-title a:focus-visible{outline:none}
+.item:has(.cap-title a:focus-visible) .thumb{outline:2px solid var(--ink);outline-offset:3px}
+.cap-meta{color:var(--meta);font-size:16px;line-height:1.2;overflow-wrap:anywhere}
+.cap-desc{color:var(--meta);font-size:14px;line-height:1.35;padding-top:6px}
+.cap-note{color:var(--signal);font-size:13px;line-height:1.35;padding-top:4px}
+.cap-links{display:flex;flex-wrap:wrap;gap:4px 12px;padding-top:6px;font-size:13px}
+.cap-links a,.cap-links button{position:relative;z-index:2;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;background:none;border:0;padding:0;font-size:13px;cursor:pointer}
+.cap-links a:hover,.cap-links button:hover{text-decoration-color:currentColor}
+.cap-links .del{color:var(--meta)}
+.cap-links .del.confirm{color:var(--signal)}
+@media (max-width:639px){.cap-title{font-size:15px}.cap-meta{font-size:14px}.cap-desc{font-size:13px}.cap-note{font-size:12px}}
+.new-tag{display:inline-block;margin-left:6px;font:500 11px var(--font);color:var(--signal);text-transform:uppercase;letter-spacing:.04em;vertical-align:2px}
+
+.dead{margin-top:88px;border-top:1px solid var(--line);padding-top:20px}
+.dead summary{cursor:pointer;font:500 16px var(--font);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.dead summary span{font-weight:400;color:var(--meta);font-size:14px}
+.dead .grid{margin-top:32px}
+.dead .cap-title{text-decoration:line-through;text-decoration-thickness:1px}
+
+.empty{padding-block:64px;display:grid;gap:16px;justify-items:start}
+.empty p{font-size:20px;line-height:1.3;max-width:40ch}
+.ghost{border:1px solid var(--line);background:transparent;padding:6px 14px;font:400 14px var(--font);cursor:pointer}
+.ghost:hover{border-color:var(--ink)}
+
+/* ---------- меню ---------- */
+.menu{position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+.menu .top{padding-top:calc(24px + env(safe-area-inset-top,0px))}
+.menu-list{list-style:none;margin:0;padding:28px 0 0;display:grid;gap:4px}
+.menu-list button{border:0;background:none;padding:2px 0;font:500 clamp(28px,5vw,56px)/1.08 var(--font);letter-spacing:-.03em;cursor:pointer;text-align:left}
+.menu-list button:hover{color:var(--meta)}
+.menu-list .n{font-size:14px;font-weight:400;color:var(--meta);vertical-align:super;margin-left:6px;letter-spacing:0}
+.menu-about{display:grid;gap:10px;max-width:46ch;padding-block:48px;color:var(--meta);font-size:15px;line-height:1.45}
+.menu-about a{color:var(--ink)}
+
+/* ---------- форма добавления ---------- */
+.panel{margin-top:28px;padding:24px;border:1px solid var(--ink)}
+.panel h2{margin:0 0 6px;font:500 24px/1.15 var(--font);letter-spacing:-.02em}
+.panel .hint{color:var(--meta);font-size:14px;margin-bottom:20px}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px 20px}
+.field{display:grid;gap:6px;min-width:0}
+.field.wide{grid-column:1/-1}
+.field label,.field .lbl{font-size:13px;color:var(--meta)}
+.field input[type=text],.field input[type=url],.field select{width:100%;padding:8px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;font-size:16px;outline:none}
+.field input:focus,.field select:focus{border-bottom-color:var(--ink)}
+.check{display:flex;align-items:center;gap:8px;font-size:15px;padding-top:6px}
+.check input{width:16px;height:16px;accent-color:var(--ink)}
+.err{font-size:13px;color:var(--signal);min-height:0}
+.actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* ---------- подвал, наверх, тост ---------- */
+footer{border-top:1px solid var(--line)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;padding-block:24px 40px;font-size:14px;color:var(--meta);line-height:1.45}
+.foot a{color:var(--ink)}
+.totop{position:fixed;z-index:20;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));padding:6px 10px;border:1px solid var(--line);background:var(--bg);font:400 14px var(--font);cursor:pointer;transition:opacity .2s}
+.totop[data-off]{opacity:0;pointer-events:none}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;max-width:calc(100% - 32px);padding:10px 16px;background:var(--ink);color:var(--bg);font-size:14px}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .item:hover .thumb img{transform:none}
+}
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <a class="logo" href="#" id="home" aria-label="Закрома ремесленника, в начало">
+    <svg viewBox="0 0 30 34" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="1" width="28" height="32"/><path d="M1 11.7h28M1 22.3h28"/></g><g fill="currentColor"><rect x="11" y="5.4" width="8" height="2"/><rect x="11" y="16" width="8" height="2"/><rect x="11" y="26.6" width="8" height="2"/></g></svg>
+    <span class="logo-word">Закрома<br>ремесленника</span>
+  </a>
+  <button class="menu-btn" id="menu-open" type="button" aria-haspopup="dialog" aria-controls="menu">Меню</button>
+</header>
+
+<section class="wrap intro" aria-label="О памятке">
+  <p class="lede">Сайты, архивы, нейросети и файлы из канала «дизайн ремесленник» <span>и старой таблицы, собранные в одном месте.</span></p>
+  <p class="stats" id="stats">&nbsp;</p>
+</section>
+
+<div class="wrap controls">
+  <div class="row">
+    <span class="label">Раздел:</span>
+    <div class="filters" id="filters" role="toolbar" aria-label="Разделы"></div>
+  </div>
+  <div class="row wrapme">
+    <label class="search" for="q">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Поиск: градиент, мокап, 3D, tilda" autocomplete="off" spellcheck="false" aria-label="Поиск по памятке">
+    </label>
+    <button class="fbtn" id="t-free" type="button" aria-pressed="false">Есть бесплатное</button>
+    <button class="fbtn" id="t-fav" type="button" aria-pressed="false">Сохранённые <span class="n" id="fav-count">0</span></button>
+    <button class="add-btn" id="add-open" type="button" hidden>+ Добавить ссылку</button>
+  </div>
+
+  <section class="panel" id="add-panel" hidden aria-labelledby="add-title">
+    <h2 id="add-title">Новая ссылка</h2>
+    <p class="hint">Сохранится в памятке для всех, кто её открывает. Картинку для неё я смогу добавить позже по просьбе в чате.</p>
+    <form class="form" id="add-form" novalidate>
+      <div class="field">
+        <label for="f-name">Название</label>
+        <input id="f-name" type="text" maxlength="80" placeholder="например, Coolors">
+      </div>
+      <div class="field">
+        <label for="f-url">Ссылка</label>
+        <input id="f-url" type="url" placeholder="https://" inputmode="url">
+        <p class="err" id="e-url"></p>
+      </div>
+      <div class="field wide">
+        <label for="f-desc">Зачем она нужна</label>
+        <input id="f-desc" type="text" maxlength="220" placeholder="одним предложением, чтобы потом вспомнить">
+      </div>
+      <div class="field">
+        <label for="f-sec">Раздел</label>
+        <select id="f-sec"></select>
+      </div>
+      <div class="field">
+        <label for="f-price">Цена</label>
+        <select id="f-price">
+          <option value="">не знаю</option>
+          <option value="free">бесплатно</option>
+          <option value="freemium">есть бесплатное</option>
+          <option value="paid">платно</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="lbl">Метка</span>
+        <label class="check" for="f-ai"><input id="f-ai" type="checkbox"> нейросеть</label>
+      </div>
+      <div class="actions">
+        <button class="add-btn" type="submit">Сохранить в памятку</button>
+        <button class="ghost" type="button" id="f-cancel">Отмена</button>
+        <p class="err" id="e-form"></p>
+      </div>
+    </form>
+  </section>
+</div>
+
+<main class="wrap" id="main">
+  <p class="result" id="result" hidden></p>
+  <div id="list"></div>
+  <div class="empty" id="empty" hidden>
+    <p id="empty-text">Ничего не нашлось.</p>
+    <button class="ghost" type="button" id="reset">Сбросить поиск и фильтры</button>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>Собрано из постов <a href="https://t.me/design_remeslo" target="_blank" rel="noopener noreferrer">t.me/design_remeslo</a> и таблицы «Полезные сайты и ИИ». Ссылки проверены <span id="checked"></span>.</p>
+    <p>Превью сайтов сняты 26.10.2026, звёздочки хранятся только в этом браузере.</p>
+  </div>
+</footer>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Разделы памятки" hidden>
+  <div class="wrap top">
+    <span class="logo">
+      <svg viewBox="0 0 30 34" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="1" width="28" height="32"/><path d="M1 11.7h28M1 22.3h28"/></g><g fill="currentColor"><rect x="11" y="5.4" width="8" height="2"/><rect x="11" y="16" width="8" height="2"/><rect x="11" y="26.6" width="8" height="2"/></g></svg>
+      <span class="logo-word">Закрома<br>ремесленника</span>
+    </span>
+    <button class="menu-btn" id="menu-close" type="button">Закрыть</button>
+  </div>
+  <div class="wrap">
+    <ul class="menu-list" id="menu-list"></ul>
+    <div class="menu-about">
+      <p>Памятка канала <a href="https://t.me/design_remeslo" target="_blank" rel="noopener noreferrer">«дизайн ремесленник»</a>. Здесь лежат все ссылки из постов и из таблицы «Полезные сайты и ИИ», разложенные по разделам.</p>
+      <p>Файлы (мокапы, шрифты, эффекты) скачиваются из постов в Telegram.</p>
+    </div>
+  </div>
+</div>
+
+<button class="totop" id="totop" type="button" data-off>↑ Наверх</button>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script type="application/json" id="seed">{"updated":"2026-10-26","sections":[{"id":"refs","title":"Вдохновение и референсы","note":"Где подсмотреть интерфейсы, логотипы, кадры и подачу"},{"id":"sites","title":"Сайты, на которые стоит посмотреть","note":"Живые примеры с интересной анимацией, подачей и взаимодействием"},{"id":"archives","title":"Архивы и бесплатные изображения","note":"Графдизайн прошлого и картинки без авторских прав"},{"id":"ai","title":"Нейросети","note":"Генерация, апскейл, видео, презентации и вайбкодинг"},{"id":"td","title":"3D","note":"Создать, сгенерировать, найти готовое или сконвертировать"},{"id":"illus","title":"Иллюстрации, иконки, вектор","note":"Паки, библиотеки и файлы для Figma"},{"id":"mockups","title":"Мокапы","note":"Сайты и плагины. Мокапы-файлы лежат ниже, в разделе «Файлы из канала»"},{"id":"tools","title":"Инструменты","note":"Градиенты, шрифты, проверка макетов и мелкие помощники"},{"id":"anim","title":"Анимация и код для сайтов","note":"Библиотеки и готовые компоненты для разработки и рефов"},{"id":"tilda","title":"Tilda","note":"Коды, модификации и эффекты"},{"id":"learn","title":"Учёба, статьи, журналы","note":"Курсы, туториалы и что почитать"},{"id":"files","title":"Файлы из канала","note":"Мокапы, шрифты, эффекты и вектор. Скачиваются прямо из поста в Telegram"},{"id":"dead","title":"Больше не работают","note":"Были в старой таблице, но при проверке 26.10.2026 не открылись"}],"items":[{"n":"Behance","u":"https://www.behance.net","d":"Главная площадка с портфолио дизайнеров со всего мира","s":"refs","t":["free"],"img":"img/000.webp"},{"n":"Dribbble","u":"https://dribbble.com","d":"Шоты и кейсы дизайнеров, особенно много UI","s":"refs","t":["free"],"img":"img/001.webp"},{"n":"Dprofile","u":"https://dprofile.ru","d":"Отечественный «Беханс»: портфолио, проекты, вакансии. Есть платные PRO-тарифы","s":"refs","t":["freemium"],"img":"img/002.webp"},{"n":"Pinterest","u":"https://ru.pinterest.com","d":"Соцсеть для вдохновения и мудбордов","s":"refs","t":["free"],"img":"img/003.webp"},{"n":"Soot","u":"https://play.soot.com","d":"«Пинтерест на максималках»: визуальный поиск и подборки картинок","s":"refs","t":[]},{"n":"The Index","u":"https://theindex.website","d":"«Беханс на максималках»: каталог дизайн-студий, дизайнеров и шрифтовых фаундри","s":"refs","t":[]},{"n":"Mobbin","u":"https://mobbin.com","d":"Сотни тысяч скринов мобильных и веб-приложений для рефов. Регистрация бесплатная, полный доступ по подписке","s":"refs","t":["freemium"]},{"n":"Refero","u":"https://refero.design","d":"Скрины сайтов и iOS-приложений с поиском по элементам","s":"refs","t":[],"img":"img/007.webp"},{"n":"Recent (бывший Godly)","u":"https://recent.design","d":"Подборка красивых сайтов для UX/UI-вдохновения","s":"refs","t":["free"],"p":108,"st":"moved","sn":"godly.website теперь открывает recent.design","img":"img/008.webp"},{"n":"BentoGrids","u":"https://bentogrids.com","d":"Лучшие интерфейсы в стиле бенто-сеток","s":"refs","t":["free"],"p":107,"img":"img/009.webp"},{"n":"Land-book","u":"https://land-book.com","d":"Галерея лендингов по категориям и стилям","s":"refs","t":[],"img":"img/010.webp"},{"n":"Logobook","u":"http://logobook.com","d":"Больше 5000 логотипов и знаков, поиск по форме, объекту и стилю","s":"refs","t":[],"img":"img/011.webp"},{"n":"Navbar Gallery","u":"https://www.navbar.gallery","d":"Референсы хедеров и навигации","s":"refs","t":["free"],"p":110,"img":"img/012.webp"},{"n":"Footer.design","u":"https://www.footer.design","d":"Референсы футеров","s":"refs","t":["free"],"p":110,"img":"img/013.webp"},{"n":"404s.design","u":"https://www.404s.design","d":"Референсы страниц 404","s":"refs","t":["free"],"p":110,"img":"img/014.webp"},{"n":"Screenmusings","u":"https://screenmusings.org","d":"Кадры из фильмов в большом разрешении с сортировкой по цвету: палитры и композиция","s":"refs","t":["free"],"p":138,"img":"img/015.webp"},{"n":"Eyecannndy","u":"https://eyecannndy.com","d":"Библиотека визуальных приёмов: отрывки из реклам и фильмов как референсы","s":"refs","t":["free"],"p":135,"img":"img/016.webp"},{"n":"Brik","u":"https://brik.space","d":"Идеи для анимации. Код бесплатно не скопировать, но подсмотреть можно","s":"refs","t":["ai"],"p":130,"img":"img/017.webp"},{"n":"Voku Studio","u":"https://voku.studio","d":"Мадридская студия: клипы, мода и реклама, сделанные с ИИ. Смотреть подачу","s":"refs","t":[],"img":"img/018.webp"},{"n":"Floor796","u":"https://floor796.com","d":"Огромная анимированная сцена из мемов, игр, аниме и фильмов. Мета-искусство про интернет","s":"sites","t":[],"p":104,"img":"img/019.webp"},{"n":"MILEZ","u":"https://milez.jp","d":"Японский проект о ремёслах и культуре, красивая подача","s":"sites","t":[],"p":127,"img":"img/020.webp"},{"n":"Shopify BFCM","u":"https://bfcm.shopify.com","d":"Живая панель покупок в Чёрную пятницу. С компьютера можно поиграть в гонки","s":"sites","t":[],"p":115,"img":"img/021.webp"},{"n":"Palmer Dinnerware","u":"https://www.palmer-dinnerware.com","d":"Интерактивная галерея: идея для керамики, лепки и живописи","s":"sites","t":[],"p":81,"img":"img/022.webp"},{"n":"Dolce&Gabbana Velvet","u":"https://beautytools.dolcegabbana.com/en-fi/velvet","d":"Красивое взаимодействие с пользователем","s":"sites","t":[],"p":85,"img":"img/023.webp"},{"n":"Lacoste Create","u":"https://membersexperience-create.lacoste.com/gb/en/","d":"Конструктор, где пользователь сам расписывает футболку","s":"sites","t":[],"p":86,"img":"img/024.webp"},{"n":"Кейс Home&Gard на Behance","u":"https://www.behance.net/gallery/215394225/internet-magazin-Home-Gard-veb-dizajn-sajt","d":"Русскоязычный кейс интернет-магазина. Шрифтовая пара из него лежит в канале","s":"sites","t":[],"p":99,"img":"img/025.webp"},{"n":"Spencer Gabor","u":"https://spencergabor.com","d":"Сайт художника-иллюстратора","s":"sites","t":[],"img":"img/026.webp"},{"n":"Inside Kristallnacht","u":"https://insidekristallnacht.org","d":"Интерактивный исторический сайт-сторителлинг","s":"sites","t":[],"img":"img/027.webp"},{"n":"Banzai","u":"https://www.nudolsbanzai.it","d":"Лапша Banzai: небольшая линейка продукта подана через интерактив","s":"sites","t":[],"img":"img/028.webp"},{"n":"Wodniack.dev","u":"https://wodniack.dev","d":"Портфолио фронтенд-разработчика Антуана Водниака, много анимации","s":"sites","t":[],"img":"img/029.webp"},{"n":"Radiance","u":"https://radiance.family","d":"Студия из Дрездена, интересно распределена информация","s":"sites","t":[],"img":"img/030.webp"},{"n":"Clear Street","u":"https://www.clearstreet.io","d":"Брокерская компания, хорошие дашборды","s":"sites","t":[],"img":"img/031.webp"},{"n":"Vide Infra: ИИ в банкинге","u":"https://ai-in-banking-ux-design.videinfra.com","d":"Лендинг-лонгрид с анимацией про ИИ в банковском UX","s":"sites","t":[],"img":"img/032.webp"},{"n":"Amaterasu","u":"https://amaterasu.ai","d":"Анимация и визуал","s":"sites","t":[],"img":"img/033.webp"},{"n":"House of Dreamers","u":"https://www.houseofdreamers.com","d":"Иммерсивная выставка в Лондоне: графика и идея","s":"sites","t":[],"st":"moved","sn":"Адрес сменился с houseofdreamers.fr на .com","img":"img/034.webp"},{"n":"The Vega Foundation","u":"https://www.thevegafoundation.com","d":"Арт-фонд, сдержанный выразительный визуал","s":"sites","t":[],"img":"img/035.webp"},{"n":"Ramos","u":"https://ramos-app.webflow.io","d":"Чистый приятный визуал. Лендинг на Webflow от студии Outcrowd","s":"sites","t":[],"img":"img/036.webp"},{"n":"YZA Voku","u":"https://www.yzavoku.com","d":"Портфолио ИИ-художника и режиссёра. Идея для художников и фотографов","s":"sites","t":[],"img":"img/037.webp"},{"n":"Polecat","u":"https://www.polecat.agency","d":"Агентство мобильной и веб-разработки. Очень ярко","s":"sites","t":[],"img":"img/038.webp"},{"n":"ONTO","u":"https://studio-onto.com","d":"Студия для фаундеров, анимация логотипа","s":"sites","t":[],"img":"img/039.webp"},{"n":"ChainGPT Labs","u":"https://labs.chaingpt.org","d":"Web3-инкубатор: визуал ИИ для блокчейна","s":"sites","t":[],"img":"img/040.webp"},{"n":"Only","u":"https://only.digital","d":"Digital-агентство: сайты для СИБУРа, Северстали и других. Уровень, к которому стремиться","s":"sites","t":[],"img":"img/041.webp"},{"n":"Blacklight","u":"https://blacklight.ru","d":"Агентство креативных коммуникаций, подача в духе портфолио фотографа","s":"sites","t":[],"img":"img/042.webp"},{"n":"Wild Week: Афины","u":"https://week.wild.plus/athens-26","d":"Сайт на Framer: выездная неделя в Грецию","s":"sites","t":[],"img":"img/043.webp"},{"n":"Nrthview","u":"https://nrthview.com","d":"Сайт на Framer: портфолио артиста, идея для своего портфолио","s":"sites","t":[],"img":"img/044.webp"},{"n":"USHA","u":"https://ru.ushacafe.com","d":"Сайт на Tilda: кондитерская на Бали","s":"sites","t":[]},{"n":"Design Reviewed","u":"https://designreviewed.com/archive/","d":"Архив графического дизайна: сканы старых изданий, плакатов и журналов","s":"archives","t":["free"],"p":131,"img":"img/046.webp"},{"n":"People's Graphic Design Archive","u":"https://peoplesgdarchive.org","d":"Народный архив графдизайна, который пополняют сами дизайнеры","s":"archives","t":["free"],"p":131,"img":"img/047.webp"},{"n":"IADDB","u":"https://iaddb.org","d":"Ещё один архив по графическому дизайну из подборки","s":"archives","t":["free"],"p":131,"img":"img/048.webp"},{"n":"Archives.design","u":"https://archives.design","d":"Архив графического дизайна из той же подборки","s":"archives","t":["free"],"p":131,"img":"img/049.webp"},{"n":"The Public Domain Review","u":"https://publicdomainreview.org/collections/","d":"Забытые изображения с историями. Каждую неделю новое","s":"archives","t":["free"],"p":139,"img":"img/050.webp"},{"n":"Public Work","u":"https://public.work","d":"Больше 100 000 изображений без авторских прав из MET, Нью-Йоркской публичной библиотеки и других","s":"archives","t":["free"],"p":43,"img":"img/051.webp"},{"n":"Pexels","u":"https://www.pexels.com/ru-ru/","d":"Бесплатные фото и видео","s":"archives","t":["free"],"img":"img/052.webp"},{"n":"PngImg","u":"https://pngimg.com","d":"Около 116 тысяч PNG с прозрачным фоном по темам","s":"archives","t":["free"],"img":"img/053.webp"},{"n":"Magnific (бывший Freepik)","u":"https://www.magnific.com/ru","d":"Шаблоны, PSD, EPS, иконки и ИИ-генерация. Freepik переименовался в Magnific","s":"archives","t":["freemium","ai"],"st":"changed","sn":"ru.freepik.com теперь открывает Magnific","img":"img/054.webp"},{"n":"Ideogram","u":"https://ideogram.ai/t/explore","d":"Генерация изображений, хорошо справляется с текстом на картинке","s":"ai","t":["ai","freemium"],"img":"img/055.webp"},{"n":"Reve","u":"https://app.reve.com","d":"Генерация и редактирование изображений","s":"ai","t":["ai"],"st":"moved","sn":"Переехал с preview.reve.art на app.reve.com","img":"img/056.webp"},{"n":"Civitai","u":"https://civitai.com/images","d":"Сообщество моделей и генераций, можно подсмотреть промты","s":"ai","t":["ai"],"img":"img/057.webp"},{"n":"UltraPixel","u":"https://huggingface.co/spaces/roubaofeipi/UltraPixel-demo","d":"Генерация картинок в высоком разрешении, около 4K","s":"ai","t":["ai","free"],"img":"img/058.webp"},{"n":"Stable Diffusion 3.5 Large","u":"https://huggingface.co/spaces/stabilityai/stable-diffusion-3.5-large","d":"Демо генерации фотографий","s":"ai","t":["ai","free"],"img":"img/059.webp"},{"n":"Luma Dream Machine","u":"https://lumalabs.ai/app","d":"Генерация изображений и видео, теперь в виде креативных агентов","s":"ai","t":["ai"],"st":"moved","sn":"Dream Machine переехал на lumalabs.ai/app","img":"img/060.webp"},{"n":"Runway","u":"https://app.runwayml.com","d":"Замена объектов на изображении (Erase and Replace) и видеоинструменты","s":"ai","t":["ai"],"img":"img/061.webp"},{"n":"Image Outpaint","u":"https://huggingface.co/spaces/fffiloni/diffusers-image-outpaint","d":"Расширяет фон фотографии, дорисовывая края","s":"ai","t":["ai","free"],"x":[{"l":"инструкция","u":"https://www.instagram.com/reel/DAfdpp8MMYs/"}],"img":"img/062.webp"},{"n":"Pollo AI Upscaler","u":"https://pollo.ai/image-upscaler","d":"Увеличивает разрешение до 16×. Можно попробовать бесплатно","s":"ai","t":["ai","freemium"],"st":"moved","sn":"Адрес upscale.pro теперь ведёт сюда","img":"img/063.webp"},{"n":"Clipdrop Upscaler","u":"https://clipdrop.co/image-upscaler","d":"Увеличивает качество изображения","s":"ai","t":["ai"],"st":"changed","sn":"Clipdrop теперь часть Jasper, условия тарифов могли поменяться","img":"img/064.webp"},{"n":"Pika","u":"https://pika.art","d":"Генерация видео","s":"ai","t":["ai"],"img":"img/065.webp"},{"n":"Нейрослайд","u":"https://neuroslide.io","d":"Презентация из черновика в стиле бренда, экспорт в PPTX","s":"ai","t":["ai"],"p":133,"img":"img/066.webp"},{"n":"Gamma","u":"https://gamma.app","d":"Презентации и документы с ИИ","s":"ai","t":["ai"],"p":133,"img":"img/067.webp"},{"n":"Atoms","u":"https://atoms.dev","d":"MVP, портфолио или лендинг за 10 минут. Редактировать можно только на платном тарифе, от $20/мес","s":"ai","t":["ai","freemium"],"p":121,"img":"img/068.webp"},{"n":"MotionSites","u":"https://motionsites.ai","d":"Промты для вайбкодинга лендингов с анимацией. Есть бесплатные","s":"ai","t":["ai","freemium"],"p":134,"img":"img/069.webp"},{"n":"Spline","u":"https://spline.design","d":"3D-сцены и анимация для веба, много шаблонов. Часть функций платная","s":"td","t":["freemium"],"img":"img/070.webp"},{"n":"Spline: мокап MacBook Pro","u":"https://app.spline.design/community/file/b0d85d21-4d22-4648-bf94-24dc1e877799","d":"Готовая анимированная 3D-сцена из сообщества Spline, можно сделать ремикс","s":"td","t":["free"],"img":"img/071.webp"},{"n":"Vectary","u":"https://www.vectary.com","d":"Создание и анимация 3D-моделей, интерактивные 3D- и AR-презентации","s":"td","t":[],"p":129,"img":"img/072.webp"},{"n":"Endless Tools","u":"https://app.endlesstools.io","d":"3D-ассеты и визуалы для соцсетей без программирования","s":"td","t":[],"img":"img/073.webp"},{"n":"Meshy","u":"https://www.meshy.ai/discover","d":"3D-модели из текста и картинок, текстуры, риггинг, анимация","s":"td","t":["ai","freemium"],"img":"img/074.webp"},{"n":"Hunyuan3D 2.1","u":"https://huggingface.co/spaces/tencent/Hunyuan3D-2.1","d":"Делает 3D-объект из иллюстрации или фото, с текстурами","s":"td","t":["ai","free"],"img":"img/075.webp"},{"n":"NVIDIA Build","u":"https://build.nvidia.com","d":"Каталог генеративных моделей, в том числе для 3D","s":"td","t":["ai"],"st":"changed","sn":"Отдельной страницы Edify 3D больше нет, теперь там общий каталог моделей","img":"img/076.webp"},{"n":"Sketchfab","u":"https://sketchfab.com","d":"Библиотека 3D-моделей, много бесплатных","s":"td","t":["freemium"],"img":"img/077.webp"},{"n":"Morflax Shift","u":"https://studio.morflax.com/shift/text","d":"Превращает текст и SVG в 3D с анимацией, экспорт до 4K. Бесплатно, есть Pro","s":"td","t":["freemium"],"img":"img/078.webp"},{"n":"Convert3D","u":"https://convert3d.org","d":"Конвертер 3D-форматов (OBJ, FBX, STL, STEP и др.) прямо в браузере","s":"td","t":["free"],"img":"img/079.webp"},{"n":"Shapefest","u":"https://shapefest.com","d":"100 000+ 3D-иллюстраций форм. Бесплатно в 512 px, большие версии платно","s":"td","t":["freemium"],"img":"img/080.webp"},{"n":"Blush","u":"https://blush.design","d":"Настраиваемые иллюстрации от разных художников, есть плагин для Figma. SVG только на платном","s":"illus","t":["freemium"],"img":"img/081.webp"},{"n":"unDraw","u":"https://undraw.co/illustrations","d":"Открытые иллюстрации, цвет меняется под бренд","s":"illus","t":["free"]},{"n":"Pixels.market","u":"https://pixels.market","d":"Иллюстрации и иконки: бесплатные для личного использования, коммерческие наборы платные","s":"illus","t":["freemium"],"img":"img/083.webp"},{"n":"Business 3D Icons","u":"https://drive.google.com/drive/folders/1XWZ_7fd81jRL6GSsR0noYOf-ibilToWy","d":"Пак 3D-иконок для бизнеса в PNG и PSD на Google Диске. В таблице был подписан как «пак чб»","s":"illus","t":["free"],"img":"img/084.webp"},{"n":"Surface Pack","u":"https://www.figma.com/community/file/883778082594341562/free-75-illustrations-surface-pack","d":"75+ иллюстраций «от руки» с небрежной обводкой. Бесплатно, в том числе для коммерции","s":"illus","t":["free"],"p":98,"img":"img/085.webp"},{"n":"Y2K elements","u":"https://www.figma.com/community/file/1555322950361847099/y2k-elements","d":"Мой файл в Figma с элементами для дерзких креативов","s":"illus","t":["free"],"p":88,"img":"img/086.webp"},{"n":"Social Media Icons 2021","u":"https://www.figma.com/community/file/929729132405358534","d":"Иконки соцсетей в Figma, всё ещё актуальные. Лицензия CC BY 4.0, нужно указывать автора","s":"illus","t":["free"],"p":128,"img":"img/087.webp"},{"n":"theSVG","u":"https://thesvg.org","d":"7600+ SVG-иконок брендов, есть плагин для Figma. Лицензия MIT","s":"illus","t":["free"],"x":[{"l":"GitHub","u":"https://github.com/glincker/thesvg"}],"img":"img/088.webp"},{"n":"LS Graphics","u":"https://www.ls.graphics","d":"Мокапы для Photoshop и Figma. Есть бесплатный раздел, остальное по подписке от $9/мес","s":"mockups","t":["freemium"],"img":"img/089.webp"},{"n":"Pacdora","u":"https://www.pacdora.com","d":"5000+ мокапов упаковки и 3000 шаблонов развёрток, 3D-редактор","s":"mockups","t":[],"img":"img/090.webp"},{"n":"Mockuuups Studio","u":"https://www.figma.com/community/plugin/786250770157843670/mockuuups-studio","d":"Плагин для Figma, 5 бесплатных шаблонов на крайний случай","s":"mockups","t":["freemium"],"p":97,"img":"img/091.webp"},{"n":"ShaderGradient","u":"https://shadergradient.co/customize","d":"Настраиваешь анимированный градиент для первого экрана и отдаёшь разработчику готовый код","s":"tools","t":["free"],"p":106,"img":"img/092.webp"},{"n":"Photogradient","u":"https://photogradient.com","d":"Градиент из цветов фотографии","s":"tools","t":[],"img":"img/093.webp"},{"n":"Haikei","u":"https://haikei.app","d":"SVG-волны, блобы и фоны","s":"tools","t":["free"],"st":"changed","sn":"Get Waves (getwaves.io) теперь часть Haikei","x":[{"l":"старый Get Waves","u":"https://getwaves.io"}],"img":"img/094.webp"},{"n":"Variable Fonts Workshop","u":"http://variablefonts.gdwithgd.com","d":"Поиграться с вариативными шрифтами","s":"tools","t":["free"],"img":"img/095.webp"},{"n":"Venngage","u":"https://venngage.com/templates/infographics","d":"Шаблоны инфографики и диаграмм","s":"tools","t":["freemium"],"st":"changed","sn":"Старая ссылка теперь просит войти, здесь открытый каталог шаблонов","img":"img/096.webp"},{"n":"Attention Insight","u":"https://app.attentioninsight.com","d":"Карта внимания: насколько хорошо считывается баннер или сайт","s":"tools","t":["ai"],"p":126,"img":"img/097.webp"},{"n":"Smallpdf","u":"https://smallpdf.com/ru/compress-pdf","d":"Сжимает PDF и не портит качество. Выручает с презентациями","s":"tools","t":["freemium"],"p":84,"img":"img/098.webp"},{"n":"ScreenChat","u":"https://screenchat.live","d":"Скриншот переписки для макетов","s":"tools","t":[],"img":"img/099.webp"},{"n":"Calkin","u":"https://calkin.ru/inflation","d":"Калькулятор инфляции и налогов, который дизайнер собрал вайбкодингом","s":"tools","t":["free"],"p":124,"img":"img/100.webp"},{"n":"GSAP","u":"https://gsap.com","d":"Библиотека веб-анимации. С 2025 года полностью бесплатная, вместе с плагинами","s":"anim","t":["free"],"img":"img/101.webp"},{"n":"Three.js","u":"https://threejs.org","d":"3D в браузере","s":"anim","t":["free"],"img":"img/102.webp"},{"n":"Motion","u":"https://motion.dev/examples","d":"Примеры анимаций на Motion (бывший Framer Motion)","s":"anim","t":[],"img":"img/103.webp"},{"n":"Anime.js","u":"https://animejs.com","d":"Лёгкая библиотека анимации","s":"anim","t":["free"],"img":"img/104.webp"},{"n":"Lottie","u":"https://lottie.airbnb.tech","d":"Анимации из After Effects в JSON для сайтов и приложений","s":"anim","t":["free"],"img":"img/105.webp"},{"n":"Uiverse","u":"https://uiverse.io","d":"Готовые кнопки, лоадеры, карточки на CSS и Tailwind","s":"anim","t":["free"],"img":"img/106.webp"},{"n":"Aceternity UI","u":"https://ui.aceternity.com","d":"Компоненты с эффектной анимацией на React и Tailwind","s":"anim","t":[],"img":"img/107.webp"},{"n":"Magic UI Pro","u":"https://pro.magicui.design","d":"Шаблоны и секции лендингов на React. Шаблон от $49, есть безлимитный доступ. Бесплатная версия на magicui.design","s":"anim","t":["paid"],"x":[{"l":"бесплатная версия","u":"https://magicui.design"}],"img":"img/108.webp"},{"n":"21st.dev","u":"https://21st.dev/home","d":"12 000+ React-компонентов и шаблонов","s":"anim","t":[],"img":"img/109.webp"},{"n":"FreeFrontend","u":"https://freefrontend.com","d":"Подборки бесплатных CSS- и JS-эффектов","s":"anim","t":["free"],"img":"img/110.webp"},{"n":"Awwwards: CSS & JS Animations","u":"https://www.awwwards.com/awwwards/collections/css-js-animations/","d":"145 примеров анимаций: скролл, SVG, элементы интерфейса","s":"anim","t":["free"],"img":"img/111.webp"},{"n":"Боцман Барада: коды","u":"https://bocmanbarada.ru/codes","d":"Коды и модификации для Tilda","s":"tilda","t":[],"st":"unchecked","sn":"При проверке сайт не открылся, возможно, временно"},{"n":"Matilda Design","u":"https://mt-webdesign.ru/list","d":"Эффекты, анимации и модификации для Tilda. Часть бесплатно, остальное по подписке","s":"tilda","t":["freemium"],"img":"img/113.webp"},{"n":"Nolim","u":"https://nolim.cc","d":"200+ модификаций для Tilda и Zero Block. Часть бесплатно, полный доступ от 750 ₽/мес","s":"tilda","t":["freemium"],"img":"img/114.webp"},{"n":"9 hover-эффектов для Tilda","u":"https://youx.agency/9-hover-effects-dlya-izobrazhenij-na-tilda","d":"CSS-эффекты наведения для картинок: увеличение, блюр, ч/б и другие","s":"tilda","t":["free"],"img":"img/115.webp"},{"n":"Дизайн с нуля","u":"https://stepik.org/course/255033/promo","d":"Мой бесплатный курс: композиция, типографика, цвет, Figma, Photoshop, Illustrator и первый кейс в портфолио","s":"learn","t":["free"],"p":122,"img":"img/116.webp"},{"n":"Мой блог на Dsgners","u":"https://dsgners.ru/a_revazyan","d":"Мои статьи о дизайне","s":"learn","t":["free"],"img":"img/117.webp"},{"n":"Лендинг за 40 минут","u":"https://dsgners.ru/a_revazyan/40104-lending-za-40-minut","d":"Моя статья про прототип за полчаса, промт в подарок","s":"learn","t":["free"],"p":125,"img":"img/118.webp"},{"n":"3D-моушн в Blender без единого клика","u":"https://telegra.ph/43-sekundy-3D-moushna-bez-edinogo-klika-v-Blender-10-07","d":"Мой туториал по концепт-видео","s":"learn","t":["free"],"p":137,"img":"img/119.webp"},{"n":"One Million Prompters","u":"https://dub.ai/en/omp","d":"Бесплатное обучение по ИИ от правительства ОАЭ. Удобно смотреть с синхронным переводом в Яндекс Браузере","s":"learn","t":["free","ai"],"p":109,"img":"img/120.webp"},{"n":"Adweek: Design","u":"https://www.adweek.com/category/design/","d":"Новости дизайна в брендах и рекламе","s":"learn","t":[],"img":"img/121.webp"},{"n":"Таблица «Полезные сайты и ИИ»","u":"https://docs.google.com/spreadsheets/d/1qUUF8l86LwJ7P1VtbiMxFFA7BTk0ghKrjMLDf-wpUA0/edit","d":"Старый сборник, из которого собрана часть этой памятки","s":"learn","t":[],"p":7,"img":"img/122.webp"},{"n":"Мокапы для кофейни","u":"https://t.me/design_remeslo/8","d":"Бумажный пакет, стаканчик, меню над раздачей, постер, iPhone","s":"files","t":["free"],"p":8,"img":"img/123.webp"},{"n":"Мокапы Capsule Collection","u":"https://t.me/design_remeslo/30","d":"Стильные мокапы для презентации проектов и постер на клипсах","s":"files","t":["free"],"p":30,"img":"img/124.webp"},{"n":"Яркие мокапы А4","u":"https://t.me/design_remeslo/59","d":"Рамки на стене и ковре, стул с листом. Для баннеров","s":"files","t":["free"],"p":59,"img":"img/125.webp"},{"n":"Мокапы визиток","u":"https://t.me/design_remeslo/92","d":"Визитки в двух ориентациях","s":"files","t":["free"],"p":92,"img":"img/126.webp"},{"n":"Весенние мокапы с цветами","u":"https://t.me/design_remeslo/111","d":"Канцелярия с цветочками","s":"files","t":["free"],"p":111,"img":"img/127.webp"},{"n":"Подборка шрифтов","u":"https://t.me/design_remeslo/67","d":"Disruptor's Script, Drabina, Berold, Mirra, Limbo и другие","s":"files","t":["free"],"p":67,"files":["Disruptor's Script.zip","Drabina.zip","ghastly_panic.zip","berold.zip","ani-dimitrova-maver.zip","mirra.otf","limbo.zip"]},{"n":"Шрифтовая пара Nauryz + Gilroy","u":"https://t.me/design_remeslo/100","d":"Пара из кейса Home&Gard","s":"files","t":["free"],"p":100,"files":["NauryzRedKeds.ttf · 572 KB","gilroy.zip · 839 KB"]},{"n":"Текстовые эффекты: ретро и японский","u":"https://t.me/design_remeslo/18","d":"PSD-эффекты, плюс эффект скребания текста","s":"files","t":["free"],"p":18,"img":"img/130.webp"},{"n":"Эффект в PSD","u":"https://t.me/design_remeslo/82","d":"Ещё один эффект в формате .psd","s":"files","t":["free"],"p":82,"files":["11568731.psd · 88.7 MB","11568742.jpg · 16.4 MB"]},{"n":"Текстовый эффект для постеров","u":"https://t.me/design_remeslo/119","d":"Файл лежит в комментариях к посту","s":"files","t":["free"],"p":119,"img":"img/132.webp"},{"n":"Конструктор персонажей","u":"https://t.me/design_remeslo/44","d":"Редактируемые персонажи в векторе: кот, девочка, мальчик","s":"files","t":["free"],"p":44,"files":["hand-drawn-character-constructor.zip","кот.png","девочка.png","мальчик.png"]},{"n":"Ретро-стикеры","u":"https://t.me/design_remeslo/54","d":"Наклейки, штампы, бирки и поп-арт в векторе","s":"files","t":["free"],"p":54,"img":"img/134.webp"},{"n":"Флаер А4","u":"https://t.me/design_remeslo/74","d":"PSD с уже настроенным цветовым профилем","s":"files","t":["free"],"p":74,"files":["flyer-a4-01.psd · 99 MB","flyer-a4-02.psd · 112 MB","flyer-a4-03.psd · 99 MB","+ превью .jpg"]},{"n":"AI Fusion Art","u":"https://aifusionart.com","d":"Генерировал фото в большом разрешении","s":"dead","t":[],"st":"dead","sn":"Домен перехвачен, теперь там спам-реклама казино. Не открывайте","nolink":true},{"n":"Pikfree","u":"https://pikfree.ru","d":"Мокапы","s":"dead","t":[],"st":"dead","sn":"Вместо сайта пустая заглушка","nolink":true},{"n":"Flux.1 Upscaler","u":"https://huggingface.co/spaces/jasperai/Flux.1-dev-Controlnet-Upscaler","d":"Улучшение качества изображения","s":"dead","t":[],"st":"paused","sn":"Space поставлен на паузу. Замена: Pollo AI или Clipdrop в разделе «Нейросети»"}]}</script>
+<script>
+(function(){
+  "use strict";
+  var data;
+  try { data = JSON.parse(document.getElementById("seed").textContent); } catch (e) { data = { sections: [], items: [] }; }
+
+  var $ = function (s) { return document.querySelector(s); };
+  var state = { q: "", sec: "all", free: false, fav: false };
+  var PRICE = { free: "бесплатно", freemium: "есть бесплатное", paid: "платно" };
+  var ST = { moved: "Переехал", changed: "Изменился", unchecked: "Не открылся", dead: "Не работает", paused: "На паузе" };
+  var BAD = { dead: 1, paused: 1, unchecked: 1 };
+  var SHORT = { refs: "Вдохновение", sites: "Сайты", archives: "Архивы", ai: "Нейросети", td: "3D", illus: "Иллюстрации", mockups: "Мокапы", tools: "Инструменты", anim: "Анимация и код", tilda: "Tilda", learn: "Учёба", files: "Файлы" };
+  var FAVKEY = "zakroma:fav", DRAFTKEY = "zakroma:draft";
+  var fav = new Set();
+  try { fav = new Set(JSON.parse(localStorage.getItem(FAVKEY) || "[]")); } catch (e) {}
+  function saveFav() { try { localStorage.setItem(FAVKEY, JSON.stringify(Array.from(fav))); } catch (e) {} }
+
+  var art = null, editing = false, busy = false, dirty = false;
+
+  function norm(s) { return String(s || "").toLowerCase().replace(/ё/g, "е"); }
+  function safeUrl(u) { try { var x = new URL(u); return (x.protocol === "https:" || x.protocol === "http:") ? x.href : null; } catch (e) { return null; } }
+  function host(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; } }
+  function urlKey(u) { try { var x = new URL(u); return (x.hostname.replace(/^www\./, "") + x.pathname.replace(/\/+$/, "") + x.search).toLowerCase(); } catch (e) { return norm(u); } }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function secTitle(id) { var s = data.sections.find(function (x) { return x.id === id; }); return s ? s.title : ""; }
+  function fmtDate(iso) { var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ""); return m ? m[3] + "." + m[2] + "." + m[1] : ""; }
+  function plural(n, a, b, c) { var m10 = n % 10, m100 = n % 100; if (m10 === 1 && m100 !== 11) return a; if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return b; return c; }
+  function isNew(it) { if (!it.added) return false; var t = Date.parse(it.added); return !isNaN(t) && (Date.now() - t) < 21 * 864e5; }
+  function isPost(it) { return /^https:\/\/t\.me\/design_remeslo\/\d+/.test(it.u || ""); }
+  function safeImg(p) { return typeof p === "string" && /^img\/[\w.-]+\.(webp|jpg|png)$/.test(p) ? p : null; }
+
+  function matches(it) {
+    var t = it.t || [];
+    if (state.free && !(t.indexOf("free") > -1 || t.indexOf("freemium") > -1)) return false;
+    if (state.fav && !fav.has(it.u)) return false;
+    if (state.q) {
+      var hay = norm([it.n, it.d, host(it.u), secTitle(it.s), t.map(function (x) { return PRICE[x] || (x === "ai" ? "ии нейросеть" : ""); }).join(" "), it.p ? "пост " + it.p : "", it.sn || "", (it.files || []).join(" ")].join(" "));
+      var words = norm(state.q).split(/\s+/).filter(Boolean);
+      for (var i = 0; i < words.length; i++) if (hay.indexOf(words[i]) < 0) return false;
+    }
+    return true;
+  }
+
+  var STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path stroke-linejoin="round" d="m12 3.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg>';
+
+  function renderThumb(it) {
+    var box = el("div", "thumb");
+    var src = safeImg(it.img);
+    if (src) {
+      var im = document.createElement("img");
+      im.src = src; im.alt = "Превью: " + it.n; im.loading = "lazy"; im.decoding = "async"; im.width = 560; im.height = 700;
+      box.append(im);
+    } else {
+      var ph = el("div", "ph");
+      if (it.files && it.files.length) {
+        var ul = el("ul", "ph-files");
+        it.files.forEach(function (f) { ul.append(el("li", null, f)); });
+        ph.append(el("span", "ph-meta", "Файлы в посте"), ul);
+      } else {
+        ph.append(el("span", "ph-word", it.s === "dead" ? host(it.u) : it.n), el("span", "ph-meta", it.s === "dead" ? "нет превью" : host(it.u)));
+      }
+      box.append(ph);
+    }
+    if (it.st && ST[it.st]) box.append(el("span", "sticker" + (BAD[it.st] ? " bad" : ""), ST[it.st]));
+    return box;
+  }
+
+  function renderItem(it) {
+    var dead = it.s === "dead";
+    var a = el("article", "item");
+    a.dataset.key = it.u;
+    a.append(renderThumb(it));
+    if (!dead) {
+      var star = el("button", "star");
+      star.type = "button";
+      var on = fav.has(it.u);
+      star.setAttribute("aria-pressed", on ? "true" : "false");
+      star.setAttribute("aria-label", (on ? "Убрать из сохранённых: " : "Сохранить: ") + it.n);
+      star.innerHTML = STAR;
+      star.addEventListener("click", function () { if (fav.has(it.u)) fav.delete(it.u); else fav.add(it.u); saveFav(); render(); });
+      a.append(star);
+    }
+    var cap = el("div", "cap");
+    var h = el("h3", "cap-title");
+    var href = it.nolink ? null : safeUrl(it.u);
+    if (href) { var link = el("a", null, it.n); link.href = href; link.target = "_blank"; link.rel = "noopener noreferrer"; h.append(link); }
+    else h.textContent = it.n;
+    if (isNew(it)) h.append(el("span", "new-tag", "новое"));
+    cap.append(h);
+
+    var meta = isPost(it) ? "Telegram, пост #" + it.p : host(it.u);
+    var price = (it.t || []).filter(function (t) { return PRICE[t]; }).map(function (t) { return PRICE[t]; })[0];
+    var ai = (it.t || []).indexOf("ai") > -1;
+    var bits = [meta]; if (price) bits.push(price); if (ai && it.s !== "ai") bits.push("ИИ");
+    cap.append(el("p", "cap-meta", bits.join(" · ")));
+    if (it.d) cap.append(el("p", "cap-desc", it.d));
+    if (it.sn) cap.append(el("p", "cap-note", it.sn));
+
+    var links = el("p", "cap-links"), has = false;
+    if (it.p && !isPost(it)) { var pl = el("a", null, "пост #" + it.p); pl.href = "https://t.me/design_remeslo/" + it.p; pl.target = "_blank"; pl.rel = "noopener noreferrer"; links.append(pl); has = true; }
+    (it.x || []).forEach(function (x) { var xu = safeUrl(x.u); if (!xu) return; var xl = el("a", null, x.l); xl.href = xu; xl.target = "_blank"; xl.rel = "noopener noreferrer"; links.append(xl); has = true; });
+    if (editing) {
+      var del = el("button", "del", "убрать"); del.type = "button"; del.setAttribute("aria-label", "Убрать из памятки: " + it.n);
+      var timer = null;
+      del.addEventListener("click", function () {
+        if (!del.classList.contains("confirm")) { del.classList.add("confirm"); del.textContent = "точно убрать?"; timer = setTimeout(function () { del.classList.remove("confirm"); del.textContent = "убрать"; }, 4000); return; }
+        clearTimeout(timer); removeItem(it);
+      });
+      links.append(del); has = true;
+    }
+    if (has) cap.append(links);
+    a.append(cap);
+    return a;
+  }
+
+  function renderGrid(items) { var g = el("div", "grid"); items.forEach(function (i) { g.append(renderItem(i)); }); return g; }
+
+  function renderFilters(counts, total) {
+    var box = $("#filters"); box.replaceChildren();
+    [{ id: "all" }].concat(data.sections.filter(function (s) { return s.id !== "dead"; })).forEach(function (s) {
+      var n = s.id === "all" ? total : (counts[s.id] || 0);
+      var b = el("button", "fbtn" + (n === 0 ? " zero" : ""));
+      b.type = "button";
+      b.setAttribute("aria-pressed", state.sec === s.id ? "true" : "false");
+      b.append(document.createTextNode(s.id === "all" ? "Все" : (SHORT[s.id] || s.title)), el("span", "n", String(n)));
+      b.addEventListener("click", function () { state.sec = (state.sec === s.id && s.id !== "all") ? "all" : s.id; render(); });
+      box.append(b);
+    });
+  }
+
+  function renderMenu() {
+    var ul = $("#menu-list"); ul.replaceChildren();
+    data.sections.forEach(function (s) {
+      if (s.id === "dead") return;
+      var n = data.items.filter(function (i) { return i.s === s.id; }).length;
+      var li = el("li"), b = el("button", null, s.title); b.type = "button";
+      b.append(el("span", "n", String(n)));
+      b.addEventListener("click", function () { closeMenu(); state.sec = s.id; state.q = ""; $("#q").value = ""; state.free = false; state.fav = false; render(); $(".controls").scrollIntoView(); });
+      li.append(b); ul.append(li);
+    });
+  }
+
+  function render() {
+    var list = $("#list"); list.replaceChildren();
+    var live = data.items.filter(function (i) { return i.s !== "dead"; });
+    var counts = {}, total = 0;
+    live.forEach(function (i) { if (matches(i)) { counts[i.s] = (counts[i.s] || 0) + 1; total++; } });
+    renderFilters(counts, total);
+
+    var shown = 0;
+    data.sections.forEach(function (sec) {
+      if (sec.id === "dead") return;
+      if (state.sec !== "all" && state.sec !== sec.id) return;
+      var its = live.filter(function (i) { return i.s === sec.id && matches(i); });
+      if (!its.length) return;
+      shown += its.length;
+      var s = el("section", "sec"); s.id = "sec-" + sec.id;
+      var head = el("div", "sec-head");
+      var h = el("h2", null, sec.title); h.id = "h-" + sec.id; s.setAttribute("aria-labelledby", h.id);
+      head.append(h, el("span", "count", its.length + " " + plural(its.length, "ссылка", "ссылки", "ссылок")));
+      if (sec.note) head.append(el("p", null, sec.note));
+      s.append(head, renderGrid(its));
+      list.append(s);
+    });
+
+    var dsec = data.sections.find(function (s) { return s.id === "dead"; });
+    var dits = data.items.filter(function (i) { return i.s === "dead" && matches(i); });
+    if (dsec && dits.length && state.sec === "all" && !state.free && !state.fav) {
+      var d = el("details", "dead");
+      var sm = el("summary"); sm.append(document.createTextNode(dsec.title + " · " + dits.length), el("span", null, dsec.note || ""));
+      d.append(sm, renderGrid(dits)); list.append(d);
+    }
+
+    var filtering = state.q || state.free || state.fav || state.sec !== "all";
+    var rl = $("#result");
+    if (filtering && shown) { rl.hidden = false; rl.textContent = "Найдено: " + shown + " " + plural(shown, "ссылка", "ссылки", "ссылок"); } else rl.hidden = true;
+    var empty = $("#empty");
+    empty.hidden = shown > 0 || (!filtering && list.children.length > 0);
+    if (!empty.hidden) {
+      $("#empty-text").textContent = state.fav && !fav.size ? "Пока ничего не сохранено. Наведите на превью и нажмите звёздочку, ссылка появится здесь."
+        : (state.q ? "По запросу «" + state.q + "» ничего не нашлось. Попробуйте другое слово или сбросьте фильтры." : "В этом наборе фильтров пусто.");
+    }
+
+    var withImg = live.filter(function (i) { return safeImg(i.img); }).length;
+    $("#stats").textContent = live.length + " " + plural(live.length, "ссылка", "ссылки", "ссылок") + " в " + (data.sections.length - 1) + " разделах · " + withImg + " с превью · проверено " + fmtDate(data.updated);
+    $("#checked").textContent = fmtDate(data.updated);
+    $("#fav-count").textContent = String(fav.size);
+    $("#t-free").setAttribute("aria-pressed", state.free ? "true" : "false");
+    $("#t-fav").setAttribute("aria-pressed", state.fav ? "true" : "false");
+    renderMenu();
+  }
+
+  /* ---------- события ---------- */
+  var qInput = $("#q"), qTimer = null;
+  qInput.addEventListener("input", function () { clearTimeout(qTimer); qTimer = setTimeout(function () { state.q = qInput.value.trim(); render(); }, 90); });
+  document.addEventListener("keydown", function (e) {
+    var tag = (document.activeElement || {}).tagName || "";
+    if (e.key === "/" && !/^(INPUT|TEXTAREA|SELECT)$/.test(tag)) { e.preventDefault(); qInput.focus(); }
+    if (e.key === "Escape") { if (!$("#menu").hidden) closeMenu(); else if (document.activeElement === qInput && qInput.value) { qInput.value = ""; state.q = ""; render(); } }
+  });
+  $("#t-free").addEventListener("click", function () { state.free = !state.free; render(); });
+  $("#t-fav").addEventListener("click", function () { state.fav = !state.fav; render(); });
+  $("#reset").addEventListener("click", function () { state.q = ""; qInput.value = ""; state.free = false; state.fav = false; state.sec = "all"; render(); });
+  $("#home").addEventListener("click", function (e) { e.preventDefault(); state.sec = "all"; render(); window.scrollTo({ top: 0 }); });
+
+  var lastFocus = null;
+  function openMenu() { lastFocus = document.activeElement; $("#menu").hidden = false; document.body.style.overflow = "hidden"; $("#menu-close").focus(); }
+  function closeMenu() { $("#menu").hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+  $("#menu-open").addEventListener("click", openMenu);
+  $("#menu-close").addEventListener("click", closeMenu);
+
+  var totop = $("#totop");
+  window.addEventListener("scroll", function () { if (window.scrollY > 900) totop.removeAttribute("data-off"); else totop.setAttribute("data-off", ""); }, { passive: true });
+  totop.addEventListener("click", function () { window.scrollTo({ top: 0 }); });
+
+  var toastTimer = null;
+  function toast(msg) { var t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.hidden = true; }, 3800); }
+
+  /* ---------- добавление (только для владельца) ---------- */
+  var panel = $("#add-panel"), form = $("#add-form");
+  function fillSections() { var sel = $("#f-sec"); sel.replaceChildren(); data.sections.forEach(function (s) { if (s.id === "dead") return; var o = el("option", null, s.title); o.value = s.id; sel.append(o); }); }
+  function openPanel() { fillSections(); if (state.sec !== "all") $("#f-sec").value = state.sec; panel.hidden = false; $("#f-name").focus(); }
+  function closePanel() { panel.hidden = true; form.reset(); $("#e-url").textContent = ""; $("#e-form").textContent = ""; }
+  $("#add-open").addEventListener("click", function () { panel.hidden ? openPanel() : closePanel(); });
+  $("#f-cancel").addEventListener("click", closePanel);
+  function readForm() { return { n: $("#f-name").value.trim(), u: $("#f-url").value.trim(), d: $("#f-desc").value.trim(), s: $("#f-sec").value, price: $("#f-price").value, ai: $("#f-ai").checked }; }
+  function stashDraft() { try { sessionStorage.setItem(DRAFTKEY, JSON.stringify(readForm())); } catch (e) {} }
+  function clearDraft() { try { sessionStorage.removeItem(DRAFTKEY); } catch (e) {} }
+  function restoreDraft() {
+    var d = null; try { d = JSON.parse(sessionStorage.getItem(DRAFTKEY) || "null"); } catch (e) {}
+    if (!d) return;
+    openPanel();
+    $("#f-name").value = d.n || ""; $("#f-url").value = d.u || ""; $("#f-desc").value = d.d || "";
+    if (d.s) $("#f-sec").value = d.s; $("#f-price").value = d.price || ""; $("#f-ai").checked = !!d.ai;
+    $("#e-form").textContent = "Черновик восстановлен: страница обновилась, пока вы сохраняли. Проверьте и сохраните ещё раз.";
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); if (busy) return;
+    var f = readForm(); $("#e-url").textContent = ""; $("#e-form").textContent = "";
+    if (!f.n) { $("#e-form").textContent = "Добавьте название."; $("#f-name").focus(); return; }
+    var url = f.u && !/^https?:\/\//i.test(f.u) ? "https://" + f.u : f.u;
+    var href = safeUrl(url);
+    if (!href) { $("#e-url").textContent = "Нужна полная ссылка, например https://example.com"; $("#f-url").focus(); return; }
+    var k = urlKey(href), dup = data.items.find(function (i) { return urlKey(i.u) === k; });
+    if (dup) { $("#e-url").textContent = "Эта ссылка уже есть: «" + dup.n + "» в разделе «" + secTitle(dup.s) + "»."; return; }
+    var tags = []; if (f.price) tags.push(f.price); if (f.ai) tags.push("ai");
+    var item = { n: f.n.slice(0, 80), u: href, d: f.d.slice(0, 220), s: f.s, t: tags, added: new Date().toISOString().slice(0, 10) };
+    stashDraft();
+    save(function () { data.items.push(item); }, function () { data.items.splice(data.items.indexOf(item), 1); }, "Ссылка «" + item.n + "» сохранена", function () {
+      clearDraft(); closePanel(); state.q = ""; qInput.value = ""; state.fav = false; state.free = false; state.sec = item.s; render();
+      var node = document.querySelector('[data-key="' + CSS.escape(item.u) + '"]'); if (node) node.scrollIntoView({ block: "center" });
+    });
+  });
+  function removeItem(it) { var idx = data.items.indexOf(it); if (idx < 0) return; save(function () { data.items.splice(idx, 1); }, function () { data.items.splice(idx, 0, it); }, "«" + it.n + "» убрана из памятки"); }
+
+  var MSG = {
+    conflict: "Страница успела обновиться. Сейчас она перезагрузится, повторите действие.",
+    not_writer: "У вас доступ только на чтение.", not_granted: "Сохранять из этого окна нельзя.", consent_required: "Сохранять из этого окна нельзя.",
+    not_declared: "Сохранение отключено.", capability_disabled: "Отсюда сохранить нельзя. Откройте памятку в claude.ai под своим аккаунтом.",
+    rate_limited: "Слишком часто. Подождите минуту и попробуйте снова.", too_large: "Памятка стала слишком большой для сохранения.", invalid_content: "Не получилось сохранить: данные не приняты."
+  };
+  function save(mutate, revert, okMsg, after) {
+    if (!art || busy) return;
+    busy = true; dirty = true; mutate(); render();
+    var attempt = function (retry) {
+      return art.publish({ "links.json": JSON.stringify(data, null, 1) }).then(function () { busy = false; clearDraft(); toast(okMsg); if (after) after(); }, function (err) {
+        var code = err && err.code;
+        if (code === "upstream_error" && retry) return new Promise(function (r) { setTimeout(r, 700 + Math.random() * 900); }).then(function () { return attempt(false); });
+        busy = false;
+        if (code !== "conflict") { revert(); render(); }
+        toast(MSG[code] || "Не получилось сохранить. Попробуйте ещё раз чуть позже.");
+        if (/^(not_writer|not_granted|consent_required|not_declared|capability_disabled)$/.test(code || "")) disableEditing();
+      });
+    };
+    attempt(true);
+  }
+  function disableEditing() { editing = false; $("#add-open").hidden = true; panel.hidden = true; render(); }
+  function initEditing() {
+    var c = window.claude; if (!c || typeof c.use !== "function") return;
+    Promise.all([c.use("artifact"), c.use("user")]).then(function (r) {
+      var a = r[0], u = r[1]; if (!a || !u || typeof u.canEdit !== "function") return null;
+      return u.canEdit().then(function (ok) { return ok ? a : null; });
+    }).then(function (a) { if (!a) return; art = a; editing = true; $("#add-open").hidden = false; render(); restoreDraft(); }).catch(function () {});
+  }
+
+  render();
+  fetch("links.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+    if (!dirty && j && Array.isArray(j.items) && Array.isArray(j.sections)) { data = j; render(); }
+  }).catch(function () {});
+  initEditing();
+})();
+</script>
+</body>
+</html>

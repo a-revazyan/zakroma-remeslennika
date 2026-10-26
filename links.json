@@ -1,0 +1,1500 @@
+{
+ "updated": "2026-10-26",
+ "sections": [
+  {
+   "id": "refs",
+   "title": "Вдохновение и референсы",
+   "note": "Где подсмотреть интерфейсы, логотипы, кадры и подачу"
+  },
+  {
+   "id": "sites",
+   "title": "Сайты, на которые стоит посмотреть",
+   "note": "Живые примеры с интересной анимацией, подачей и взаимодействием"
+  },
+  {
+   "id": "archives",
+   "title": "Архивы и бесплатные изображения",
+   "note": "Графдизайн прошлого и картинки без авторских прав"
+  },
+  {
+   "id": "ai",
+   "title": "Нейросети",
+   "note": "Генерация, апскейл, видео, презентации и вайбкодинг"
+  },
+  {
+   "id": "td",
+   "title": "3D",
+   "note": "Создать, сгенерировать, найти готовое или сконвертировать"
+  },
+  {
+   "id": "illus",
+   "title": "Иллюстрации, иконки, вектор",
+   "note": "Паки, библиотеки и файлы для Figma"
+  },
+  {
+   "id": "mockups",
+   "title": "Мокапы",
+   "note": "Сайты и плагины. Мокапы-файлы лежат ниже, в разделе «Файлы из канала»"
+  },
+  {
+   "id": "tools",
+   "title": "Инструменты",
+   "note": "Градиенты, шрифты, проверка макетов и мелкие помощники"
+  },
+  {
+   "id": "anim",
+   "title": "Анимация и код для сайтов",
+   "note": "Библиотеки и готовые компоненты для разработки и рефов"
+  },
+  {
+   "id": "tilda",
+   "title": "Tilda",
+   "note": "Коды, модификации и эффекты"
+  },
+  {
+   "id": "learn",
+   "title": "Учёба, статьи, журналы",
+   "note": "Курсы, туториалы и что почитать"
+  },
+  {
+   "id": "files",
+   "title": "Файлы из канала",
+   "note": "Мокапы, шрифты, эффекты и вектор. Скачиваются прямо из поста в Telegram"
+  },
+  {
+   "id": "dead",
+   "title": "Больше не работают",
+   "note": "Были в старой таблице, но при проверке 26.10.2026 не открылись"
+  }
+ ],
+ "items": [
+  {
+   "n": "Behance",
+   "u": "https://www.behance.net",
+   "d": "Главная площадка с портфолио дизайнеров со всего мира",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "img": "img/000.webp"
+  },
+  {
+   "n": "Dribbble",
+   "u": "https://dribbble.com",
+   "d": "Шоты и кейсы дизайнеров, особенно много UI",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "img": "img/001.webp"
+  },
+  {
+   "n": "Dprofile",
+   "u": "https://dprofile.ru",
+   "d": "Отечественный «Беханс»: портфолио, проекты, вакансии. Есть платные PRO-тарифы",
+   "s": "refs",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/002.webp"
+  },
+  {
+   "n": "Pinterest",
+   "u": "https://ru.pinterest.com",
+   "d": "Соцсеть для вдохновения и мудбордов",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "img": "img/003.webp"
+  },
+  {
+   "n": "Soot",
+   "u": "https://play.soot.com",
+   "d": "«Пинтерест на максималках»: визуальный поиск и подборки картинок",
+   "s": "refs",
+   "t": []
+  },
+  {
+   "n": "The Index",
+   "u": "https://theindex.website",
+   "d": "«Беханс на максималках»: каталог дизайн-студий, дизайнеров и шрифтовых фаундри",
+   "s": "refs",
+   "t": []
+  },
+  {
+   "n": "Mobbin",
+   "u": "https://mobbin.com",
+   "d": "Сотни тысяч скринов мобильных и веб-приложений для рефов. Регистрация бесплатная, полный доступ по подписке",
+   "s": "refs",
+   "t": [
+    "freemium"
+   ]
+  },
+  {
+   "n": "Refero",
+   "u": "https://refero.design",
+   "d": "Скрины сайтов и iOS-приложений с поиском по элементам",
+   "s": "refs",
+   "t": [],
+   "img": "img/007.webp"
+  },
+  {
+   "n": "Recent (бывший Godly)",
+   "u": "https://recent.design",
+   "d": "Подборка красивых сайтов для UX/UI-вдохновения",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "p": 108,
+   "st": "moved",
+   "sn": "godly.website теперь открывает recent.design",
+   "img": "img/008.webp"
+  },
+  {
+   "n": "BentoGrids",
+   "u": "https://bentogrids.com",
+   "d": "Лучшие интерфейсы в стиле бенто-сеток",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "p": 107,
+   "img": "img/009.webp"
+  },
+  {
+   "n": "Land-book",
+   "u": "https://land-book.com",
+   "d": "Галерея лендингов по категориям и стилям",
+   "s": "refs",
+   "t": [],
+   "img": "img/010.webp"
+  },
+  {
+   "n": "Logobook",
+   "u": "http://logobook.com",
+   "d": "Больше 5000 логотипов и знаков, поиск по форме, объекту и стилю",
+   "s": "refs",
+   "t": [],
+   "img": "img/011.webp"
+  },
+  {
+   "n": "Navbar Gallery",
+   "u": "https://www.navbar.gallery",
+   "d": "Референсы хедеров и навигации",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "p": 110,
+   "img": "img/012.webp"
+  },
+  {
+   "n": "Footer.design",
+   "u": "https://www.footer.design",
+   "d": "Референсы футеров",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "p": 110,
+   "img": "img/013.webp"
+  },
+  {
+   "n": "404s.design",
+   "u": "https://www.404s.design",
+   "d": "Референсы страниц 404",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "p": 110,
+   "img": "img/014.webp"
+  },
+  {
+   "n": "Screenmusings",
+   "u": "https://screenmusings.org",
+   "d": "Кадры из фильмов в большом разрешении с сортировкой по цвету: палитры и композиция",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "p": 138,
+   "img": "img/015.webp"
+  },
+  {
+   "n": "Eyecannndy",
+   "u": "https://eyecannndy.com",
+   "d": "Библиотека визуальных приёмов: отрывки из реклам и фильмов как референсы",
+   "s": "refs",
+   "t": [
+    "free"
+   ],
+   "p": 135,
+   "img": "img/016.webp"
+  },
+  {
+   "n": "Brik",
+   "u": "https://brik.space",
+   "d": "Идеи для анимации. Код бесплатно не скопировать, но подсмотреть можно",
+   "s": "refs",
+   "t": [
+    "ai"
+   ],
+   "p": 130,
+   "img": "img/017.webp"
+  },
+  {
+   "n": "Voku Studio",
+   "u": "https://voku.studio",
+   "d": "Мадридская студия: клипы, мода и реклама, сделанные с ИИ. Смотреть подачу",
+   "s": "refs",
+   "t": [],
+   "img": "img/018.webp"
+  },
+  {
+   "n": "Floor796",
+   "u": "https://floor796.com",
+   "d": "Огромная анимированная сцена из мемов, игр, аниме и фильмов. Мета-искусство про интернет",
+   "s": "sites",
+   "t": [],
+   "p": 104,
+   "img": "img/019.webp"
+  },
+  {
+   "n": "MILEZ",
+   "u": "https://milez.jp",
+   "d": "Японский проект о ремёслах и культуре, красивая подача",
+   "s": "sites",
+   "t": [],
+   "p": 127,
+   "img": "img/020.webp"
+  },
+  {
+   "n": "Shopify BFCM",
+   "u": "https://bfcm.shopify.com",
+   "d": "Живая панель покупок в Чёрную пятницу. С компьютера можно поиграть в гонки",
+   "s": "sites",
+   "t": [],
+   "p": 115,
+   "img": "img/021.webp"
+  },
+  {
+   "n": "Palmer Dinnerware",
+   "u": "https://www.palmer-dinnerware.com",
+   "d": "Интерактивная галерея: идея для керамики, лепки и живописи",
+   "s": "sites",
+   "t": [],
+   "p": 81,
+   "img": "img/022.webp"
+  },
+  {
+   "n": "Dolce&Gabbana Velvet",
+   "u": "https://beautytools.dolcegabbana.com/en-fi/velvet",
+   "d": "Красивое взаимодействие с пользователем",
+   "s": "sites",
+   "t": [],
+   "p": 85,
+   "img": "img/023.webp"
+  },
+  {
+   "n": "Lacoste Create",
+   "u": "https://membersexperience-create.lacoste.com/gb/en/",
+   "d": "Конструктор, где пользователь сам расписывает футболку",
+   "s": "sites",
+   "t": [],
+   "p": 86,
+   "img": "img/024.webp"
+  },
+  {
+   "n": "Кейс Home&Gard на Behance",
+   "u": "https://www.behance.net/gallery/215394225/internet-magazin-Home-Gard-veb-dizajn-sajt",
+   "d": "Русскоязычный кейс интернет-магазина. Шрифтовая пара из него лежит в канале",
+   "s": "sites",
+   "t": [],
+   "p": 99,
+   "img": "img/025.webp"
+  },
+  {
+   "n": "Spencer Gabor",
+   "u": "https://spencergabor.com",
+   "d": "Сайт художника-иллюстратора",
+   "s": "sites",
+   "t": [],
+   "img": "img/026.webp"
+  },
+  {
+   "n": "Inside Kristallnacht",
+   "u": "https://insidekristallnacht.org",
+   "d": "Интерактивный исторический сайт-сторителлинг",
+   "s": "sites",
+   "t": [],
+   "img": "img/027.webp"
+  },
+  {
+   "n": "Banzai",
+   "u": "https://www.nudolsbanzai.it",
+   "d": "Лапша Banzai: небольшая линейка продукта подана через интерактив",
+   "s": "sites",
+   "t": [],
+   "img": "img/028.webp"
+  },
+  {
+   "n": "Wodniack.dev",
+   "u": "https://wodniack.dev",
+   "d": "Портфолио фронтенд-разработчика Антуана Водниака, много анимации",
+   "s": "sites",
+   "t": [],
+   "img": "img/029.webp"
+  },
+  {
+   "n": "Radiance",
+   "u": "https://radiance.family",
+   "d": "Студия из Дрездена, интересно распределена информация",
+   "s": "sites",
+   "t": [],
+   "img": "img/030.webp"
+  },
+  {
+   "n": "Clear Street",
+   "u": "https://www.clearstreet.io",
+   "d": "Брокерская компания, хорошие дашборды",
+   "s": "sites",
+   "t": [],
+   "img": "img/031.webp"
+  },
+  {
+   "n": "Vide Infra: ИИ в банкинге",
+   "u": "https://ai-in-banking-ux-design.videinfra.com",
+   "d": "Лендинг-лонгрид с анимацией про ИИ в банковском UX",
+   "s": "sites",
+   "t": [],
+   "img": "img/032.webp"
+  },
+  {
+   "n": "Amaterasu",
+   "u": "https://amaterasu.ai",
+   "d": "Анимация и визуал",
+   "s": "sites",
+   "t": [],
+   "img": "img/033.webp"
+  },
+  {
+   "n": "House of Dreamers",
+   "u": "https://www.houseofdreamers.com",
+   "d": "Иммерсивная выставка в Лондоне: графика и идея",
+   "s": "sites",
+   "t": [],
+   "st": "moved",
+   "sn": "Адрес сменился с houseofdreamers.fr на .com",
+   "img": "img/034.webp"
+  },
+  {
+   "n": "The Vega Foundation",
+   "u": "https://www.thevegafoundation.com",
+   "d": "Арт-фонд, сдержанный выразительный визуал",
+   "s": "sites",
+   "t": [],
+   "img": "img/035.webp"
+  },
+  {
+   "n": "Ramos",
+   "u": "https://ramos-app.webflow.io",
+   "d": "Чистый приятный визуал. Лендинг на Webflow от студии Outcrowd",
+   "s": "sites",
+   "t": [],
+   "img": "img/036.webp"
+  },
+  {
+   "n": "YZA Voku",
+   "u": "https://www.yzavoku.com",
+   "d": "Портфолио ИИ-художника и режиссёра. Идея для художников и фотографов",
+   "s": "sites",
+   "t": [],
+   "img": "img/037.webp"
+  },
+  {
+   "n": "Polecat",
+   "u": "https://www.polecat.agency",
+   "d": "Агентство мобильной и веб-разработки. Очень ярко",
+   "s": "sites",
+   "t": [],
+   "img": "img/038.webp"
+  },
+  {
+   "n": "ONTO",
+   "u": "https://studio-onto.com",
+   "d": "Студия для фаундеров, анимация логотипа",
+   "s": "sites",
+   "t": [],
+   "img": "img/039.webp"
+  },
+  {
+   "n": "ChainGPT Labs",
+   "u": "https://labs.chaingpt.org",
+   "d": "Web3-инкубатор: визуал ИИ для блокчейна",
+   "s": "sites",
+   "t": [],
+   "img": "img/040.webp"
+  },
+  {
+   "n": "Only",
+   "u": "https://only.digital",
+   "d": "Digital-агентство: сайты для СИБУРа, Северстали и других. Уровень, к которому стремиться",
+   "s": "sites",
+   "t": [],
+   "img": "img/041.webp"
+  },
+  {
+   "n": "Blacklight",
+   "u": "https://blacklight.ru",
+   "d": "Агентство креативных коммуникаций, подача в духе портфолио фотографа",
+   "s": "sites",
+   "t": [],
+   "img": "img/042.webp"
+  },
+  {
+   "n": "Wild Week: Афины",
+   "u": "https://week.wild.plus/athens-26",
+   "d": "Сайт на Framer: выездная неделя в Грецию",
+   "s": "sites",
+   "t": [],
+   "img": "img/043.webp"
+  },
+  {
+   "n": "Nrthview",
+   "u": "https://nrthview.com",
+   "d": "Сайт на Framer: портфолио артиста, идея для своего портфолио",
+   "s": "sites",
+   "t": [],
+   "img": "img/044.webp"
+  },
+  {
+   "n": "USHA",
+   "u": "https://ru.ushacafe.com",
+   "d": "Сайт на Tilda: кондитерская на Бали",
+   "s": "sites",
+   "t": []
+  },
+  {
+   "n": "Design Reviewed",
+   "u": "https://designreviewed.com/archive/",
+   "d": "Архив графического дизайна: сканы старых изданий, плакатов и журналов",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "p": 131,
+   "img": "img/046.webp"
+  },
+  {
+   "n": "People's Graphic Design Archive",
+   "u": "https://peoplesgdarchive.org",
+   "d": "Народный архив графдизайна, который пополняют сами дизайнеры",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "p": 131,
+   "img": "img/047.webp"
+  },
+  {
+   "n": "IADDB",
+   "u": "https://iaddb.org",
+   "d": "Ещё один архив по графическому дизайну из подборки",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "p": 131,
+   "img": "img/048.webp"
+  },
+  {
+   "n": "Archives.design",
+   "u": "https://archives.design",
+   "d": "Архив графического дизайна из той же подборки",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "p": 131,
+   "img": "img/049.webp"
+  },
+  {
+   "n": "The Public Domain Review",
+   "u": "https://publicdomainreview.org/collections/",
+   "d": "Забытые изображения с историями. Каждую неделю новое",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "p": 139,
+   "img": "img/050.webp"
+  },
+  {
+   "n": "Public Work",
+   "u": "https://public.work",
+   "d": "Больше 100 000 изображений без авторских прав из MET, Нью-Йоркской публичной библиотеки и других",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "p": 43,
+   "img": "img/051.webp"
+  },
+  {
+   "n": "Pexels",
+   "u": "https://www.pexels.com/ru-ru/",
+   "d": "Бесплатные фото и видео",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "img": "img/052.webp"
+  },
+  {
+   "n": "PngImg",
+   "u": "https://pngimg.com",
+   "d": "Около 116 тысяч PNG с прозрачным фоном по темам",
+   "s": "archives",
+   "t": [
+    "free"
+   ],
+   "img": "img/053.webp"
+  },
+  {
+   "n": "Magnific (бывший Freepik)",
+   "u": "https://www.magnific.com/ru",
+   "d": "Шаблоны, PSD, EPS, иконки и ИИ-генерация. Freepik переименовался в Magnific",
+   "s": "archives",
+   "t": [
+    "freemium",
+    "ai"
+   ],
+   "st": "changed",
+   "sn": "ru.freepik.com теперь открывает Magnific",
+   "img": "img/054.webp"
+  },
+  {
+   "n": "Ideogram",
+   "u": "https://ideogram.ai/t/explore",
+   "d": "Генерация изображений, хорошо справляется с текстом на картинке",
+   "s": "ai",
+   "t": [
+    "ai",
+    "freemium"
+   ],
+   "img": "img/055.webp"
+  },
+  {
+   "n": "Reve",
+   "u": "https://app.reve.com",
+   "d": "Генерация и редактирование изображений",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "st": "moved",
+   "sn": "Переехал с preview.reve.art на app.reve.com",
+   "img": "img/056.webp"
+  },
+  {
+   "n": "Civitai",
+   "u": "https://civitai.com/images",
+   "d": "Сообщество моделей и генераций, можно подсмотреть промты",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "img": "img/057.webp"
+  },
+  {
+   "n": "UltraPixel",
+   "u": "https://huggingface.co/spaces/roubaofeipi/UltraPixel-demo",
+   "d": "Генерация картинок в высоком разрешении, около 4K",
+   "s": "ai",
+   "t": [
+    "ai",
+    "free"
+   ],
+   "img": "img/058.webp"
+  },
+  {
+   "n": "Stable Diffusion 3.5 Large",
+   "u": "https://huggingface.co/spaces/stabilityai/stable-diffusion-3.5-large",
+   "d": "Демо генерации фотографий",
+   "s": "ai",
+   "t": [
+    "ai",
+    "free"
+   ],
+   "img": "img/059.webp"
+  },
+  {
+   "n": "Luma Dream Machine",
+   "u": "https://lumalabs.ai/app",
+   "d": "Генерация изображений и видео, теперь в виде креативных агентов",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "st": "moved",
+   "sn": "Dream Machine переехал на lumalabs.ai/app",
+   "img": "img/060.webp"
+  },
+  {
+   "n": "Runway",
+   "u": "https://app.runwayml.com",
+   "d": "Замена объектов на изображении (Erase and Replace) и видеоинструменты",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "img": "img/061.webp"
+  },
+  {
+   "n": "Image Outpaint",
+   "u": "https://huggingface.co/spaces/fffiloni/diffusers-image-outpaint",
+   "d": "Расширяет фон фотографии, дорисовывая края",
+   "s": "ai",
+   "t": [
+    "ai",
+    "free"
+   ],
+   "x": [
+    {
+     "l": "инструкция",
+     "u": "https://www.instagram.com/reel/DAfdpp8MMYs/"
+    }
+   ],
+   "img": "img/062.webp"
+  },
+  {
+   "n": "Pollo AI Upscaler",
+   "u": "https://pollo.ai/image-upscaler",
+   "d": "Увеличивает разрешение до 16×. Можно попробовать бесплатно",
+   "s": "ai",
+   "t": [
+    "ai",
+    "freemium"
+   ],
+   "st": "moved",
+   "sn": "Адрес upscale.pro теперь ведёт сюда",
+   "img": "img/063.webp"
+  },
+  {
+   "n": "Clipdrop Upscaler",
+   "u": "https://clipdrop.co/image-upscaler",
+   "d": "Увеличивает качество изображения",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "st": "changed",
+   "sn": "Clipdrop теперь часть Jasper, условия тарифов могли поменяться",
+   "img": "img/064.webp"
+  },
+  {
+   "n": "Pika",
+   "u": "https://pika.art",
+   "d": "Генерация видео",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "img": "img/065.webp"
+  },
+  {
+   "n": "Нейрослайд",
+   "u": "https://neuroslide.io",
+   "d": "Презентация из черновика в стиле бренда, экспорт в PPTX",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "p": 133,
+   "img": "img/066.webp"
+  },
+  {
+   "n": "Gamma",
+   "u": "https://gamma.app",
+   "d": "Презентации и документы с ИИ",
+   "s": "ai",
+   "t": [
+    "ai"
+   ],
+   "p": 133,
+   "img": "img/067.webp"
+  },
+  {
+   "n": "Atoms",
+   "u": "https://atoms.dev",
+   "d": "MVP, портфолио или лендинг за 10 минут. Редактировать можно только на платном тарифе, от $20/мес",
+   "s": "ai",
+   "t": [
+    "ai",
+    "freemium"
+   ],
+   "p": 121,
+   "img": "img/068.webp"
+  },
+  {
+   "n": "MotionSites",
+   "u": "https://motionsites.ai",
+   "d": "Промты для вайбкодинга лендингов с анимацией. Есть бесплатные",
+   "s": "ai",
+   "t": [
+    "ai",
+    "freemium"
+   ],
+   "p": 134,
+   "img": "img/069.webp"
+  },
+  {
+   "n": "Spline",
+   "u": "https://spline.design",
+   "d": "3D-сцены и анимация для веба, много шаблонов. Часть функций платная",
+   "s": "td",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/070.webp"
+  },
+  {
+   "n": "Spline: мокап MacBook Pro",
+   "u": "https://app.spline.design/community/file/b0d85d21-4d22-4648-bf94-24dc1e877799",
+   "d": "Готовая анимированная 3D-сцена из сообщества Spline, можно сделать ремикс",
+   "s": "td",
+   "t": [
+    "free"
+   ],
+   "img": "img/071.webp"
+  },
+  {
+   "n": "Vectary",
+   "u": "https://www.vectary.com",
+   "d": "Создание и анимация 3D-моделей, интерактивные 3D- и AR-презентации",
+   "s": "td",
+   "t": [],
+   "p": 129,
+   "img": "img/072.webp"
+  },
+  {
+   "n": "Endless Tools",
+   "u": "https://app.endlesstools.io",
+   "d": "3D-ассеты и визуалы для соцсетей без программирования",
+   "s": "td",
+   "t": [],
+   "img": "img/073.webp"
+  },
+  {
+   "n": "Meshy",
+   "u": "https://www.meshy.ai/discover",
+   "d": "3D-модели из текста и картинок, текстуры, риггинг, анимация",
+   "s": "td",
+   "t": [
+    "ai",
+    "freemium"
+   ],
+   "img": "img/074.webp"
+  },
+  {
+   "n": "Hunyuan3D 2.1",
+   "u": "https://huggingface.co/spaces/tencent/Hunyuan3D-2.1",
+   "d": "Делает 3D-объект из иллюстрации или фото, с текстурами",
+   "s": "td",
+   "t": [
+    "ai",
+    "free"
+   ],
+   "img": "img/075.webp"
+  },
+  {
+   "n": "NVIDIA Build",
+   "u": "https://build.nvidia.com",
+   "d": "Каталог генеративных моделей, в том числе для 3D",
+   "s": "td",
+   "t": [
+    "ai"
+   ],
+   "st": "changed",
+   "sn": "Отдельной страницы Edify 3D больше нет, теперь там общий каталог моделей",
+   "img": "img/076.webp"
+  },
+  {
+   "n": "Sketchfab",
+   "u": "https://sketchfab.com",
+   "d": "Библиотека 3D-моделей, много бесплатных",
+   "s": "td",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/077.webp"
+  },
+  {
+   "n": "Morflax Shift",
+   "u": "https://studio.morflax.com/shift/text",
+   "d": "Превращает текст и SVG в 3D с анимацией, экспорт до 4K. Бесплатно, есть Pro",
+   "s": "td",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/078.webp"
+  },
+  {
+   "n": "Convert3D",
+   "u": "https://convert3d.org",
+   "d": "Конвертер 3D-форматов (OBJ, FBX, STL, STEP и др.) прямо в браузере",
+   "s": "td",
+   "t": [
+    "free"
+   ],
+   "img": "img/079.webp"
+  },
+  {
+   "n": "Shapefest",
+   "u": "https://shapefest.com",
+   "d": "100 000+ 3D-иллюстраций форм. Бесплатно в 512 px, большие версии платно",
+   "s": "td",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/080.webp"
+  },
+  {
+   "n": "Blush",
+   "u": "https://blush.design",
+   "d": "Настраиваемые иллюстрации от разных художников, есть плагин для Figma. SVG только на платном",
+   "s": "illus",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/081.webp"
+  },
+  {
+   "n": "unDraw",
+   "u": "https://undraw.co/illustrations",
+   "d": "Открытые иллюстрации, цвет меняется под бренд",
+   "s": "illus",
+   "t": [
+    "free"
+   ]
+  },
+  {
+   "n": "Pixels.market",
+   "u": "https://pixels.market",
+   "d": "Иллюстрации и иконки: бесплатные для личного использования, коммерческие наборы платные",
+   "s": "illus",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/083.webp"
+  },
+  {
+   "n": "Business 3D Icons",
+   "u": "https://drive.google.com/drive/folders/1XWZ_7fd81jRL6GSsR0noYOf-ibilToWy",
+   "d": "Пак 3D-иконок для бизнеса в PNG и PSD на Google Диске. В таблице был подписан как «пак чб»",
+   "s": "illus",
+   "t": [
+    "free"
+   ],
+   "img": "img/084.webp"
+  },
+  {
+   "n": "Surface Pack",
+   "u": "https://www.figma.com/community/file/883778082594341562/free-75-illustrations-surface-pack",
+   "d": "75+ иллюстраций «от руки» с небрежной обводкой. Бесплатно, в том числе для коммерции",
+   "s": "illus",
+   "t": [
+    "free"
+   ],
+   "p": 98,
+   "img": "img/085.webp"
+  },
+  {
+   "n": "Y2K elements",
+   "u": "https://www.figma.com/community/file/1555322950361847099/y2k-elements",
+   "d": "Мой файл в Figma с элементами для дерзких креативов",
+   "s": "illus",
+   "t": [
+    "free"
+   ],
+   "p": 88,
+   "img": "img/086.webp"
+  },
+  {
+   "n": "Social Media Icons 2021",
+   "u": "https://www.figma.com/community/file/929729132405358534",
+   "d": "Иконки соцсетей в Figma, всё ещё актуальные. Лицензия CC BY 4.0, нужно указывать автора",
+   "s": "illus",
+   "t": [
+    "free"
+   ],
+   "p": 128,
+   "img": "img/087.webp"
+  },
+  {
+   "n": "theSVG",
+   "u": "https://thesvg.org",
+   "d": "7600+ SVG-иконок брендов, есть плагин для Figma. Лицензия MIT",
+   "s": "illus",
+   "t": [
+    "free"
+   ],
+   "x": [
+    {
+     "l": "GitHub",
+     "u": "https://github.com/glincker/thesvg"
+    }
+   ],
+   "img": "img/088.webp"
+  },
+  {
+   "n": "LS Graphics",
+   "u": "https://www.ls.graphics",
+   "d": "Мокапы для Photoshop и Figma. Есть бесплатный раздел, остальное по подписке от $9/мес",
+   "s": "mockups",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/089.webp"
+  },
+  {
+   "n": "Pacdora",
+   "u": "https://www.pacdora.com",
+   "d": "5000+ мокапов упаковки и 3000 шаблонов развёрток, 3D-редактор",
+   "s": "mockups",
+   "t": [],
+   "img": "img/090.webp"
+  },
+  {
+   "n": "Mockuuups Studio",
+   "u": "https://www.figma.com/community/plugin/786250770157843670/mockuuups-studio",
+   "d": "Плагин для Figma, 5 бесплатных шаблонов на крайний случай",
+   "s": "mockups",
+   "t": [
+    "freemium"
+   ],
+   "p": 97,
+   "img": "img/091.webp"
+  },
+  {
+   "n": "ShaderGradient",
+   "u": "https://shadergradient.co/customize",
+   "d": "Настраиваешь анимированный градиент для первого экрана и отдаёшь разработчику готовый код",
+   "s": "tools",
+   "t": [
+    "free"
+   ],
+   "p": 106,
+   "img": "img/092.webp"
+  },
+  {
+   "n": "Photogradient",
+   "u": "https://photogradient.com",
+   "d": "Градиент из цветов фотографии",
+   "s": "tools",
+   "t": [],
+   "img": "img/093.webp"
+  },
+  {
+   "n": "Haikei",
+   "u": "https://haikei.app",
+   "d": "SVG-волны, блобы и фоны",
+   "s": "tools",
+   "t": [
+    "free"
+   ],
+   "st": "changed",
+   "sn": "Get Waves (getwaves.io) теперь часть Haikei",
+   "x": [
+    {
+     "l": "старый Get Waves",
+     "u": "https://getwaves.io"
+    }
+   ],
+   "img": "img/094.webp"
+  },
+  {
+   "n": "Variable Fonts Workshop",
+   "u": "http://variablefonts.gdwithgd.com",
+   "d": "Поиграться с вариативными шрифтами",
+   "s": "tools",
+   "t": [
+    "free"
+   ],
+   "img": "img/095.webp"
+  },
+  {
+   "n": "Venngage",
+   "u": "https://venngage.com/templates/infographics",
+   "d": "Шаблоны инфографики и диаграмм",
+   "s": "tools",
+   "t": [
+    "freemium"
+   ],
+   "st": "changed",
+   "sn": "Старая ссылка теперь просит войти, здесь открытый каталог шаблонов",
+   "img": "img/096.webp"
+  },
+  {
+   "n": "Attention Insight",
+   "u": "https://app.attentioninsight.com",
+   "d": "Карта внимания: насколько хорошо считывается баннер или сайт",
+   "s": "tools",
+   "t": [
+    "ai"
+   ],
+   "p": 126,
+   "img": "img/097.webp"
+  },
+  {
+   "n": "Smallpdf",
+   "u": "https://smallpdf.com/ru/compress-pdf",
+   "d": "Сжимает PDF и не портит качество. Выручает с презентациями",
+   "s": "tools",
+   "t": [
+    "freemium"
+   ],
+   "p": 84,
+   "img": "img/098.webp"
+  },
+  {
+   "n": "ScreenChat",
+   "u": "https://screenchat.live",
+   "d": "Скриншот переписки для макетов",
+   "s": "tools",
+   "t": [],
+   "img": "img/099.webp"
+  },
+  {
+   "n": "Calkin",
+   "u": "https://calkin.ru/inflation",
+   "d": "Калькулятор инфляции и налогов, который дизайнер собрал вайбкодингом",
+   "s": "tools",
+   "t": [
+    "free"
+   ],
+   "p": 124,
+   "img": "img/100.webp"
+  },
+  {
+   "n": "GSAP",
+   "u": "https://gsap.com",
+   "d": "Библиотека веб-анимации. С 2025 года полностью бесплатная, вместе с плагинами",
+   "s": "anim",
+   "t": [
+    "free"
+   ],
+   "img": "img/101.webp"
+  },
+  {
+   "n": "Three.js",
+   "u": "https://threejs.org",
+   "d": "3D в браузере",
+   "s": "anim",
+   "t": [
+    "free"
+   ],
+   "img": "img/102.webp"
+  },
+  {
+   "n": "Motion",
+   "u": "https://motion.dev/examples",
+   "d": "Примеры анимаций на Motion (бывший Framer Motion)",
+   "s": "anim",
+   "t": [],
+   "img": "img/103.webp"
+  },
+  {
+   "n": "Anime.js",
+   "u": "https://animejs.com",
+   "d": "Лёгкая библиотека анимации",
+   "s": "anim",
+   "t": [
+    "free"
+   ],
+   "img": "img/104.webp"
+  },
+  {
+   "n": "Lottie",
+   "u": "https://lottie.airbnb.tech",
+   "d": "Анимации из After Effects в JSON для сайтов и приложений",
+   "s": "anim",
+   "t": [
+    "free"
+   ],
+   "img": "img/105.webp"
+  },
+  {
+   "n": "Uiverse",
+   "u": "https://uiverse.io",
+   "d": "Готовые кнопки, лоадеры, карточки на CSS и Tailwind",
+   "s": "anim",
+   "t": [
+    "free"
+   ],
+   "img": "img/106.webp"
+  },
+  {
+   "n": "Aceternity UI",
+   "u": "https://ui.aceternity.com",
+   "d": "Компоненты с эффектной анимацией на React и Tailwind",
+   "s": "anim",
+   "t": [],
+   "img": "img/107.webp"
+  },
+  {
+   "n": "Magic UI Pro",
+   "u": "https://pro.magicui.design",
+   "d": "Шаблоны и секции лендингов на React. Шаблон от $49, есть безлимитный доступ. Бесплатная версия на magicui.design",
+   "s": "anim",
+   "t": [
+    "paid"
+   ],
+   "x": [
+    {
+     "l": "бесплатная версия",
+     "u": "https://magicui.design"
+    }
+   ],
+   "img": "img/108.webp"
+  },
+  {
+   "n": "21st.dev",
+   "u": "https://21st.dev/home",
+   "d": "12 000+ React-компонентов и шаблонов",
+   "s": "anim",
+   "t": [],
+   "img": "img/109.webp"
+  },
+  {
+   "n": "FreeFrontend",
+   "u": "https://freefrontend.com",
+   "d": "Подборки бесплатных CSS- и JS-эффектов",
+   "s": "anim",
+   "t": [
+    "free"
+   ],
+   "img": "img/110.webp"
+  },
+  {
+   "n": "Awwwards: CSS & JS Animations",
+   "u": "https://www.awwwards.com/awwwards/collections/css-js-animations/",
+   "d": "145 примеров анимаций: скролл, SVG, элементы интерфейса",
+   "s": "anim",
+   "t": [
+    "free"
+   ],
+   "img": "img/111.webp"
+  },
+  {
+   "n": "Боцман Барада: коды",
+   "u": "https://bocmanbarada.ru/codes",
+   "d": "Коды и модификации для Tilda",
+   "s": "tilda",
+   "t": [],
+   "st": "unchecked",
+   "sn": "При проверке сайт не открылся, возможно, временно"
+  },
+  {
+   "n": "Matilda Design",
+   "u": "https://mt-webdesign.ru/list",
+   "d": "Эффекты, анимации и модификации для Tilda. Часть бесплатно, остальное по подписке",
+   "s": "tilda",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/113.webp"
+  },
+  {
+   "n": "Nolim",
+   "u": "https://nolim.cc",
+   "d": "200+ модификаций для Tilda и Zero Block. Часть бесплатно, полный доступ от 750 ₽/мес",
+   "s": "tilda",
+   "t": [
+    "freemium"
+   ],
+   "img": "img/114.webp"
+  },
+  {
+   "n": "9 hover-эффектов для Tilda",
+   "u": "https://youx.agency/9-hover-effects-dlya-izobrazhenij-na-tilda",
+   "d": "CSS-эффекты наведения для картинок: увеличение, блюр, ч/б и другие",
+   "s": "tilda",
+   "t": [
+    "free"
+   ],
+   "img": "img/115.webp"
+  },
+  {
+   "n": "Дизайн с нуля",
+   "u": "https://stepik.org/course/255033/promo",
+   "d": "Мой бесплатный курс: композиция, типографика, цвет, Figma, Photoshop, Illustrator и первый кейс в портфолио",
+   "s": "learn",
+   "t": [
+    "free"
+   ],
+   "p": 122,
+   "img": "img/116.webp"
+  },
+  {
+   "n": "Мой блог на Dsgners",
+   "u": "https://dsgners.ru/a_revazyan",
+   "d": "Мои статьи о дизайне",
+   "s": "learn",
+   "t": [
+    "free"
+   ],
+   "img": "img/117.webp"
+  },
+  {
+   "n": "Лендинг за 40 минут",
+   "u": "https://dsgners.ru/a_revazyan/40104-lending-za-40-minut",
+   "d": "Моя статья про прототип за полчаса, промт в подарок",
+   "s": "learn",
+   "t": [
+    "free"
+   ],
+   "p": 125,
+   "img": "img/118.webp"
+  },
+  {
+   "n": "3D-моушн в Blender без единого клика",
+   "u": "https://telegra.ph/43-sekundy-3D-moushna-bez-edinogo-klika-v-Blender-10-07",
+   "d": "Мой туториал по концепт-видео",
+   "s": "learn",
+   "t": [
+    "free"
+   ],
+   "p": 137,
+   "img": "img/119.webp"
+  },
+  {
+   "n": "One Million Prompters",
+   "u": "https://dub.ai/en/omp",
+   "d": "Бесплатное обучение по ИИ от правительства ОАЭ. Удобно смотреть с синхронным переводом в Яндекс Браузере",
+   "s": "learn",
+   "t": [
+    "free",
+    "ai"
+   ],
+   "p": 109,
+   "img": "img/120.webp"
+  },
+  {
+   "n": "Adweek: Design",
+   "u": "https://www.adweek.com/category/design/",
+   "d": "Новости дизайна в брендах и рекламе",
+   "s": "learn",
+   "t": [],
+   "img": "img/121.webp"
+  },
+  {
+   "n": "Таблица «Полезные сайты и ИИ»",
+   "u": "https://docs.google.com/spreadsheets/d/1qUUF8l86LwJ7P1VtbiMxFFA7BTk0ghKrjMLDf-wpUA0/edit",
+   "d": "Старый сборник, из которого собрана часть этой памятки",
+   "s": "learn",
+   "t": [],
+   "p": 7,
+   "img": "img/122.webp"
+  },
+  {
+   "n": "Мокапы для кофейни",
+   "u": "https://t.me/design_remeslo/8",
+   "d": "Бумажный пакет, стаканчик, меню над раздачей, постер, iPhone",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 8,
+   "img": "img/123.webp"
+  },
+  {
+   "n": "Мокапы Capsule Collection",
+   "u": "https://t.me/design_remeslo/30",
+   "d": "Стильные мокапы для презентации проектов и постер на клипсах",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 30,
+   "img": "img/124.webp"
+  },
+  {
+   "n": "Яркие мокапы А4",
+   "u": "https://t.me/design_remeslo/59",
+   "d": "Рамки на стене и ковре, стул с листом. Для баннеров",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 59,
+   "img": "img/125.webp"
+  },
+  {
+   "n": "Мокапы визиток",
+   "u": "https://t.me/design_remeslo/92",
+   "d": "Визитки в двух ориентациях",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 92,
+   "img": "img/126.webp"
+  },
+  {
+   "n": "Весенние мокапы с цветами",
+   "u": "https://t.me/design_remeslo/111",
+   "d": "Канцелярия с цветочками",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 111,
+   "img": "img/127.webp"
+  },
+  {
+   "n": "Подборка шрифтов",
+   "u": "https://t.me/design_remeslo/67",
+   "d": "Disruptor's Script, Drabina, Berold, Mirra, Limbo и другие",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 67,
+   "files": [
+    "Disruptor's Script.zip",
+    "Drabina.zip",
+    "ghastly_panic.zip",
+    "berold.zip",
+    "ani-dimitrova-maver.zip",
+    "mirra.otf",
+    "limbo.zip"
+   ]
+  },
+  {
+   "n": "Шрифтовая пара Nauryz + Gilroy",
+   "u": "https://t.me/design_remeslo/100",
+   "d": "Пара из кейса Home&Gard",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 100,
+   "files": [
+    "NauryzRedKeds.ttf · 572 KB",
+    "gilroy.zip · 839 KB"
+   ]
+  },
+  {
+   "n": "Текстовые эффекты: ретро и японский",
+   "u": "https://t.me/design_remeslo/18",
+   "d": "PSD-эффекты, плюс эффект скребания текста",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 18,
+   "img": "img/130.webp"
+  },
+  {
+   "n": "Эффект в PSD",
+   "u": "https://t.me/design_remeslo/82",
+   "d": "Ещё один эффект в формате .psd",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 82,
+   "files": [
+    "11568731.psd · 88.7 MB",
+    "11568742.jpg · 16.4 MB"
+   ]
+  },
+  {
+   "n": "Текстовый эффект для постеров",
+   "u": "https://t.me/design_remeslo/119",
+   "d": "Файл лежит в комментариях к посту",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 119,
+   "img": "img/132.webp"
+  },
+  {
+   "n": "Конструктор персонажей",
+   "u": "https://t.me/design_remeslo/44",
+   "d": "Редактируемые персонажи в векторе: кот, девочка, мальчик",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 44,
+   "files": [
+    "hand-drawn-character-constructor.zip",
+    "кот.png",
+    "девочка.png",
+    "мальчик.png"
+   ]
+  },
+  {
+   "n": "Ретро-стикеры",
+   "u": "https://t.me/design_remeslo/54",
+   "d": "Наклейки, штампы, бирки и поп-арт в векторе",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 54,
+   "img": "img/134.webp"
+  },
+  {
+   "n": "Флаер А4",
+   "u": "https://t.me/design_remeslo/74",
+   "d": "PSD с уже настроенным цветовым профилем",
+   "s": "files",
+   "t": [
+    "free"
+   ],
+   "p": 74,
+   "files": [
+    "flyer-a4-01.psd · 99 MB",
+    "flyer-a4-02.psd · 112 MB",
+    "flyer-a4-03.psd · 99 MB",
+    "+ превью .jpg"
+   ]
+  },
+  {
+   "n": "AI Fusion Art",
+   "u": "https://aifusionart.com",
+   "d": "Генерировал фото в большом разрешении",
+   "s": "dead",
+   "t": [],
+   "st": "dead",
+   "sn": "Домен перехвачен, теперь там спам-реклама казино. Не открывайте",
+   "nolink": true
+  },
+  {
+   "n": "Pikfree",
+   "u": "https://pikfree.ru",
+   "d": "Мокапы",
+   "s": "dead",
+   "t": [],
+   "st": "dead",
+   "sn": "Вместо сайта пустая заглушка",
+   "nolink": true
+  },
+  {
+   "n": "Flux.1 Upscaler",
+   "u": "https://huggingface.co/spaces/jasperai/Flux.1-dev-Controlnet-Upscaler",
+   "d": "Улучшение качества изображения",
+   "s": "dead",
+   "t": [],
+   "st": "paused",
+   "sn": "Space поставлен на паузу. Замена: Pollo AI или Clipdrop в разделе «Нейросети»"
+  }
+ ]
+}
