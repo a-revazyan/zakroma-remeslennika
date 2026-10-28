@@ -61,9 +61,19 @@ p{margin:0}
 .controls{display:grid;gap:14px;padding-block:44px 8px}
 .row{display:flex;align-items:center;gap:10px 12px;min-width:0}
 .label{flex:none;font:500 16px var(--font)}
-.filters{display:flex;gap:8px;min-width:0;overflow-x:auto;scrollbar-width:none;padding-block:2px}
+.fwrap{position:relative;flex:1;min-width:0}
+.filters{display:flex;gap:8px;min-width:0;overflow-x:auto;scrollbar-width:none;padding-block:2px;scroll-behavior:smooth;overscroll-behavior-x:contain}
 .filters::-webkit-scrollbar{display:none}
-@media (min-width:760px){.filters{flex-wrap:wrap;overflow:visible}}
+.filters::after{content:"";flex:none;width:32px}
+.fwrap::before,.fwrap::after{content:"";position:absolute;top:0;bottom:0;width:64px;z-index:1;pointer-events:none;transition:opacity .2s}
+.fwrap::before{left:0;background:linear-gradient(to left,transparent,var(--bg) 70%)}
+.fwrap::after{right:0;background:linear-gradient(to right,transparent,var(--bg) 70%)}
+.farrow{position:absolute;top:50%;z-index:2;display:grid;place-items:center;width:32px;height:32px;margin-top:-16px;padding:0;border:1px solid var(--ink);border-radius:0;background:var(--bg);color:var(--ink);cursor:pointer;transition:opacity .2s}
+.farrow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:square}
+.farrow.prev{left:0}
+.farrow.next{right:0}
+.fwrap[data-start]::before,.fwrap[data-start] .farrow.prev,.fwrap[data-end]::after,.fwrap[data-end] .farrow.next{opacity:0;pointer-events:none;visibility:hidden}
+@media (min-width:760px){.filters{flex-wrap:wrap;overflow:visible}.filters::after{display:none}.fwrap::before,.fwrap::after,.farrow{display:none}}
 .fbtn{flex:none;display:inline-flex;align-items:baseline;gap:6px;padding:6px 14px;border:1px solid var(--line);border-radius:0;background:transparent;font:400 14px/1.3 var(--font);cursor:pointer;white-space:nowrap}
 .fbtn:hover{border-color:var(--ink)}
 .fbtn .n{font-size:11px;color:var(--meta);font-variant-numeric:tabular-nums}
@@ -194,7 +204,11 @@ footer{border-top:1px solid var(--line)}
 <div class="wrap controls">
   <div class="row">
     <span class="label">Раздел:</span>
-    <div class="filters" id="filters" role="toolbar" aria-label="Разделы"></div>
+    <div class="fwrap" id="fwrap" data-start>
+      <button class="farrow prev" id="f-prev" type="button" aria-label="Листать разделы влево"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13 8H3M7.5 3.5 3 8l4.5 4.5"/></svg></button>
+      <div class="filters" id="filters" role="toolbar" aria-label="Разделы"></div>
+      <button class="farrow next" id="f-next" type="button" aria-label="Листать разделы вправо"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></button>
+    </div>
   </div>
   <div class="row wrapme">
     <label class="search" for="q">
@@ -476,7 +490,25 @@ footer{border-top:1px solid var(--line)}
     $("#t-free").setAttribute("aria-pressed", state.free ? "true" : "false");
     $("#t-fav").setAttribute("aria-pressed", state.fav ? "true" : "false");
     renderMenu();
+    updateArrows();
   }
+
+  /* ---------- стрелки у разделов на телефоне ---------- */
+  var fbox = $("#filters"), fwrap = $("#fwrap");
+  function updateArrows() {
+    var max = fbox.scrollWidth - fbox.clientWidth;
+    fwrap.toggleAttribute("data-start", fbox.scrollLeft <= 2);
+    fwrap.toggleAttribute("data-end", fbox.scrollLeft >= max - 2);
+  }
+  function scrollFilters(dir) {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    fbox.scrollBy({ left: dir * Math.max(120, fbox.clientWidth * 0.7), behavior: reduce ? "auto" : "smooth" });
+  }
+  fbox.addEventListener("scroll", updateArrows, { passive: true });
+  window.addEventListener("resize", updateArrows);
+  $("#f-next").addEventListener("click", function () { scrollFilters(1); });
+  $("#f-prev").addEventListener("click", function () { scrollFilters(-1); });
+  fbox.addEventListener("focusin", function (e) { if (e.target && e.target.scrollIntoView) e.target.scrollIntoView({ block: "nearest", inline: "nearest" }); });
 
   /* ---------- события ---------- */
   var qInput = $("#q"), qTimer = null;
